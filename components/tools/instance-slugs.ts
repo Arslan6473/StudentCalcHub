@@ -11,6 +11,9 @@ export const TOOL_COMPONENT_SLUGS = [
   'molarity-calculator',
   'which-statistical-test',
   'sample-size-calculator',
+  'sat-score-calculator',
+  'psat-score-calculator',
+  'act-score-calculator',
 ] as const
 
 export type ToolComponentSlug = (typeof TOOL_COMPONENT_SLUGS)[number]

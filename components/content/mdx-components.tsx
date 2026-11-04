@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { MDXRemoteProps } from 'next-mdx-remote/rsc'
 
+import { NmsqtCutoffTable } from '@/components/content/nmsqt-cutoff-table'
 import { TestFlowchart } from '@/components/content/test-flowchart'
 
 /**
@@ -47,4 +48,5 @@ export const mdxComponents: MDXRemoteProps['components'] = {
   td: (props) => <td className="px-3 py-2" {...props} />,
   hr: () => <hr className="border-line my-8" />,
   TestFlowchart,
+  NmsqtCutoffTable,
 }

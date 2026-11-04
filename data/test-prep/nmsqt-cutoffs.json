@@ -1,0 +1,235 @@
+{
+  "classOf": "2027",
+  "testYear": "2025",
+  "commended": 208,
+  "lastChecked": "2026-11-04",
+  "note": "Semifinalist cutoffs set by NMSC and released to schools on September 9, 2026. NMSC does not post a public state table; values are as reported by these trackers, which agree on every entry.",
+  "sources": [
+    {
+      "label": "Compass Education Group — National Merit Semifinalist Cutoffs, Class of 2027 (Actual)",
+      "url": "https://www.compassprep.com/national-merit-semifinalist-cutoffs/"
+    },
+    {
+      "label": "Test Ninjas — National Merit Cutoffs 2027 by State (NMSC qualifying scores as reported in state releases)",
+      "url": "https://test-ninjas.com/national-merit-cutoffs-class-of-2027"
+    },
+    {
+      "label": "ConnectPrep — National Merit Semifinalist Cutoffs by State: Class of 2027",
+      "url": "https://www.connectprep.com/national-merit-cutoffs/"
+    }
+  ],
+  "cutoffs": [
+    {
+      "state": "Alabama",
+      "index": 210
+    },
+    {
+      "state": "Alaska",
+      "index": 208
+    },
+    {
+      "state": "Arizona",
+      "index": 215
+    },
+    {
+      "state": "Arkansas",
+      "index": 210
+    },
+    {
+      "state": "California",
+      "index": 220
+    },
+    {
+      "state": "Colorado",
+      "index": 217
+    },
+    {
+      "state": "Connecticut",
+      "index": 220
+    },
+    {
+      "state": "Delaware",
+      "index": 219
+    },
+    {
+      "state": "District of Columbia",
+      "index": 223
+    },
+    {
+      "state": "Florida",
+      "index": 216
+    },
+    {
+      "state": "Georgia",
+      "index": 217
+    },
+    {
+      "state": "Hawaii",
+      "index": 218
+    },
+    {
+      "state": "Idaho",
+      "index": 211
+    },
+    {
+      "state": "Illinois",
+      "index": 218
+    },
+    {
+      "state": "Indiana",
+      "index": 215
+    },
+    {
+      "state": "Iowa",
+      "index": 210
+    },
+    {
+      "state": "Kansas",
+      "index": 212
+    },
+    {
+      "state": "Kentucky",
+      "index": 211
+    },
+    {
+      "state": "Louisiana",
+      "index": 211
+    },
+    {
+      "state": "Maine",
+      "index": 214
+    },
+    {
+      "state": "Maryland",
+      "index": 221
+    },
+    {
+      "state": "Massachusetts",
+      "index": 221
+    },
+    {
+      "state": "Michigan",
+      "index": 216
+    },
+    {
+      "state": "Minnesota",
+      "index": 214
+    },
+    {
+      "state": "Mississippi",
+      "index": 211
+    },
+    {
+      "state": "Missouri",
+      "index": 214
+    },
+    {
+      "state": "Montana",
+      "index": 208
+    },
+    {
+      "state": "Nebraska",
+      "index": 212
+    },
+    {
+      "state": "Nevada",
+      "index": 211
+    },
+    {
+      "state": "New Hampshire",
+      "index": 215
+    },
+    {
+      "state": "New Jersey",
+      "index": 223
+    },
+    {
+      "state": "New Mexico",
+      "index": 209
+    },
+    {
+      "state": "New York",
+      "index": 220
+    },
+    {
+      "state": "North Carolina",
+      "index": 217
+    },
+    {
+      "state": "North Dakota",
+      "index": 208
+    },
+    {
+      "state": "Ohio",
+      "index": 216
+    },
+    {
+      "state": "Oklahoma",
+      "index": 210
+    },
+    {
+      "state": "Oregon",
+      "index": 216
+    },
+    {
+      "state": "Pennsylvania",
+      "index": 219
+    },
+    {
+      "state": "Rhode Island",
+      "index": 213
+    },
+    {
+      "state": "South Carolina",
+      "index": 212
+    },
+    {
+      "state": "South Dakota",
+      "index": 210
+    },
+    {
+      "state": "Tennessee",
+      "index": 214
+    },
+    {
+      "state": "Texas",
+      "index": 219
+    },
+    {
+      "state": "Utah",
+      "index": 209
+    },
+    {
+      "state": "Vermont",
+      "index": 212
+    },
+    {
+      "state": "Virginia",
+      "index": 221
+    },
+    {
+      "state": "Washington",
+      "index": 221
+    },
+    {
+      "state": "West Virginia",
+      "index": 208
+    },
+    {
+      "state": "Wisconsin",
+      "index": 212
+    },
+    {
+      "state": "Wyoming",
+      "index": 208
+    },
+    {
+      "state": "U.S. Territories",
+      "index": 208
+    },
+    {
+      "state": "Studying abroad",
+      "index": 223
+    }
+  ]
+}

@@ -7,6 +7,9 @@ import { percentErrorCalculator } from '@/config/tools/percent-error-calculator'
 import { sigFigCalculator } from '@/config/tools/sig-fig-calculator'
 import { whichStatisticalTest } from '@/config/tools/which-statistical-test'
 import { sampleSizeCalculator } from '@/config/tools/sample-size-calculator'
+import { satScoreCalculator } from '@/config/tools/sat-score-calculator'
+import { psatScoreCalculator } from '@/config/tools/psat-score-calculator'
+import { actScoreCalculator } from '@/config/tools/act-score-calculator'
 
 /** Single source of truth for tool routes, hub listings, sitemap and related links. */
 export const TOOLS: ToolConfig[] = [
@@ -17,6 +20,9 @@ export const TOOLS: ToolConfig[] = [
   molarityCalculator,
   whichStatisticalTest,
   sampleSizeCalculator,
+  satScoreCalculator,
+  psatScoreCalculator,
+  actScoreCalculator,
 ]
 
 export function getTool(hub: HubSlug, slug: string): ToolConfig | undefined {
