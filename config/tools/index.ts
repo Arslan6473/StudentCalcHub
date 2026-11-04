@@ -1,8 +1,9 @@
 import type { HubSlug } from '@/config/hubs'
 import type { ToolConfig } from '@/config/tools/types'
+import { gradeConverter } from '@/config/tools/grade-converter'
 
 /** Single source of truth for tool routes, hub listings, sitemap and related links. */
-export const TOOLS: ToolConfig[] = []
+export const TOOLS: ToolConfig[] = [gradeConverter]
 
 export function getTool(hub: HubSlug, slug: string): ToolConfig | undefined {
   return TOOLS.find((t) => t.hub === hub && t.slug === slug)
