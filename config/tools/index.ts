@@ -1,11 +1,19 @@
 import type { HubSlug } from '@/config/hubs'
 import type { ToolConfig } from '@/config/tools/types'
 import { gradeConverter } from '@/config/tools/grade-converter'
+import { gramsToMolesCalculator } from '@/config/tools/grams-to-moles-calculator'
+import { molarityCalculator } from '@/config/tools/molarity-calculator'
 import { percentErrorCalculator } from '@/config/tools/percent-error-calculator'
 import { sigFigCalculator } from '@/config/tools/sig-fig-calculator'
 
 /** Single source of truth for tool routes, hub listings, sitemap and related links. */
-export const TOOLS: ToolConfig[] = [gradeConverter, percentErrorCalculator, sigFigCalculator]
+export const TOOLS: ToolConfig[] = [
+  gradeConverter,
+  percentErrorCalculator,
+  sigFigCalculator,
+  gramsToMolesCalculator,
+  molarityCalculator,
+]
 
 export function getTool(hub: HubSlug, slug: string): ToolConfig | undefined {
   return TOOLS.find((t) => t.hub === hub && t.slug === slug)
