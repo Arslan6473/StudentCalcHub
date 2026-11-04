@@ -41,6 +41,9 @@ export function NumberField({
           type="text"
           inputMode={inputMode}
           autoComplete="off"
+          // Phone keyboards would otherwise capitalize "co2" into "Co2" (cobalt) or autocorrect "1.5x10^3".
+          autoCapitalize="none"
+          autoCorrect="off"
           spellCheck={false}
           value={value}
           placeholder={placeholder}

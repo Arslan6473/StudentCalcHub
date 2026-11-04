@@ -1,4 +1,4 @@
-import { roundToSigFigs } from '@/lib/chemistry/sig-figs'
+import { countSigFigs, parseMeasurement, roundToDecimalPlaces, roundToSigFigs } from '@/lib/chemistry/sig-figs'
 import { fail, ok, type Result } from '@/lib/result'
 import type { Step } from '@/lib/steps'
 
@@ -32,4 +32,37 @@ export function percentError(i: {
   ]
   if (i.sigFigs) steps.push({ label: 'Round', detail: `${fmt(value)}% → ${display} (${i.sigFigs} significant figures)` })
   return ok({ value, display, absoluteError, steps })
+}
+
+/**
+ * Sig figs for "Auto" rounding. Percent error subtracts first, so the difference is
+ * limited to the least precise decimal place of the two inputs (subtraction rule);
+ * dividing by the accepted value then keeps the fewer sig figs of the difference
+ * and the accepted value (division rule). The × 100 is exact.
+ */
+export function autoSigFigs(experimental: string, accepted: string): Result<{ n: number; steps: Step[] }> {
+  const ce = countSigFigs(experimental)
+  if (!ce.ok) return fail(`Experimental value: ${ce.error}`)
+  const ca = countSigFigs(accepted)
+  if (!ca.ok) return fail(`Accepted value: ${ca.error}`)
+  const dp = Math.min(ce.value.decimalPlaces, ca.value.decimalPlaces)
+  const diff = Math.abs(parseMeasurement(experimental)! - parseMeasurement(accepted)!)
+  // The difference counted in units of its last significant place, e.g. 2.3 at 1 dp → 23.
+  const units = Math.round(diff * 10 ** dp)
+  const diffCount = units === 0 ? 1 : String(units).length
+  const n = Math.min(diffCount, ca.value.count)
+  const rounded = units === 0 ? '0' : roundToDecimalPlaces(diff, dp)
+  return ok({
+    n,
+    steps: [
+      {
+        label: 'Sig figs of the difference',
+        detail: `Subtraction keeps the less precise place, so the difference is ${rounded} (${diffCount} sig fig${diffCount === 1 ? '' : 's'}).`,
+      },
+      {
+        label: 'Sig figs of the answer',
+        detail: `Division keeps the fewer of ${diffCount} (difference) and ${ca.value.count} (accepted value) → ${n}.`,
+      },
+    ],
+  })
 }

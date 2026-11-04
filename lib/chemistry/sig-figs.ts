@@ -105,7 +105,7 @@ export function roundToSigFigs(value: number, n: number): { fixed: string; scien
   return { fixed: sign + fixed, scientific: `${sign}${mantissa} × 10^${e}` }
 }
 
-function roundToDecimalPlaces(value: number, dp: number): string {
+export function roundToDecimalPlaces(value: number, dp: number): string {
   const clean = Number(value.toPrecision(12))
   if (dp >= 0) return clean.toFixed(dp)
   const unit = 10 ** -dp

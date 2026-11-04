@@ -21,7 +21,7 @@ export const percentErrorCalculator: ToolConfig = {
     {
       question: 'How many sig figs should percent error have?',
       answer:
-        'A common lab-report rule is to match the least precise measurement you used. If your measured value has 3 significant figures and the accepted value has 4, report the percent error to 3 — or to 2 or 3 if your instructor asks. The Auto option uses the smaller count.',
+        'Apply the sig fig rules to each step. The subtraction keeps the least precise decimal place, so 52.3 − 50.0 = 2.3 has 2 sig figs; dividing by the accepted value then keeps the fewer of the two counts. So 52.3 vs 50.0 gives 4.6%, not 4.60%. Some instructors simply match the least precise measurement — choose a fixed count if yours does.',
     },
     {
       question: 'What if the accepted value is zero?',

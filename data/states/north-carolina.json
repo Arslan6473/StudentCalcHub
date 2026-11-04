@@ -9,10 +9,51 @@
     }
   ],
   "lastChecked": "2026-11-04",
-  "appliesToClassOf": "2030 and later",
+  "appliesToClassOf": "2027 and later",
   "plans": [
     {
-      "name": "Future-Ready Course of Study",
+      "name": "Future-Ready Course of Study (classes of 2027–2029)",
+      "totalCredits": 22,
+      "subjects": [
+        {
+          "key": "english",
+          "label": "English",
+          "credits": 4,
+          "notes": "English I, II, III, and IV in order"
+        },
+        {
+          "key": "math",
+          "label": "Mathematics",
+          "credits": 4,
+          "notes": "NC Math 1, 2, and 3, plus a fourth course that fits your plans after high school"
+        },
+        {
+          "key": "science",
+          "label": "Science",
+          "credits": 3,
+          "notes": "A physical science, Biology, and an earth/environmental science"
+        },
+        {
+          "key": "social-studies",
+          "label": "Social Studies",
+          "credits": 4,
+          "notes": "Founding Principles/Civic Literacy, Economics and Personal Finance, American History, and World History"
+        },
+        {
+          "key": "health",
+          "label": "Health and Physical Education",
+          "credits": 1
+        },
+        {
+          "key": "cte-arts-world-language",
+          "label": "CTE, Arts, or World Language",
+          "credits": 2
+        }
+      ],
+      "notes": "For students who entered grade 9 from 2021-22 through 2025-26. Includes 4 more elective credits from any subject."
+    },
+    {
+      "name": "Future-Ready Course of Study (class of 2030 and later)",
       "totalCredits": 22,
       "subjects": [
         {
@@ -56,7 +97,7 @@
           "credits": 2
         }
       ],
-      "notes": "Includes 3 more elective credits from any subject. Students who entered grade 9 from 2021-22 through 2025-26 follow the same plan without the computer science credit and have 4 open elective credits instead of 3."
+      "notes": "For students entering grade 9 in 2026-27 or later. Includes 3 more elective credits from any subject."
     }
   ],
   "otherRequirements": [

@@ -68,3 +68,24 @@ test('ads.txt is 404 while the AdSense client is unset', async ({ page }) => {
   const res = await page.request.get('/ads.txt')
   expect(res.status()).toBe(404)
 })
+
+test('formula and sig-fig fields are not auto-capitalized or autocorrected on phones', async ({ page }) => {
+  // iOS capitalizes the first letter by default, turning co2 into Co2 (cobalt).
+  for (const [path, id] of [
+    ['/chemistry/grams-to-moles-calculator', '#gm-formula'],
+    ['/chemistry/molarity-calculator', '#mo-formula'],
+    ['/chemistry/sig-fig-calculator', '#sf-count'],
+  ]) {
+    await page.goto(path)
+    const input = page.locator(id).first()
+    await expect(input, path).toHaveAttribute('autocapitalize', 'none')
+    await expect(input, path).toHaveAttribute('autocorrect', 'off')
+  }
+})
+
+test('percent error Auto rounding applies the subtraction rule (52.3 vs 50.0 → 4.6%)', async ({ page }) => {
+  await page.goto('/chemistry/percent-error-calculator')
+  const panel = page.locator('[aria-live=polite]:visible')
+  await expect(panel).toContainText('4.6%')
+  await expect(panel).not.toContainText('4.60%')
+})

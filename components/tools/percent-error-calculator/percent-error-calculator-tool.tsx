@@ -7,8 +7,8 @@ import { NativeSelect } from '@/components/ui/native-select'
 import { NumberField } from '@/components/tools/number-field'
 import { StepsList } from '@/components/tools/steps-list'
 import { ResultMessage, ResultStat, ResultValue, ToolShell } from '@/components/tools/tool-shell'
-import { percentError } from '@/lib/chemistry/percent-error'
-import { countSigFigs, parseMeasurement } from '@/lib/chemistry/sig-figs'
+import { autoSigFigs, percentError } from '@/lib/chemistry/percent-error'
+import { parseMeasurement } from '@/lib/chemistry/sig-figs'
 
 export function PercentErrorCalculatorTool() {
   const [experimental, setExperimental] = React.useState('52.3')
@@ -18,10 +18,10 @@ export function PercentErrorCalculatorTool() {
 
   const exp = parseMeasurement(experimental)
   const acc = parseMeasurement(accepted)
-  // "Auto" matches the least precise measurement, the usual lab-report rule.
-  const counts = [countSigFigs(experimental), countSigFigs(accepted)]
-  const autoSigFigs = counts.every((c) => c.ok) ? Math.min(...counts.map((c) => (c.ok ? c.value.count : 0))) : undefined
-  const n = sigFigs === 'auto' ? autoSigFigs : sigFigs === 'none' ? undefined : Number(sigFigs)
+  // "Auto" applies the subtraction rule to the difference, then the division rule.
+  const auto = autoSigFigs(experimental, accepted)
+  const autoN = auto.ok ? auto.value.n : undefined
+  const n = sigFigs === 'auto' ? autoN : sigFigs === 'none' ? undefined : Number(sigFigs)
 
   const result =
     exp === null
@@ -53,7 +53,7 @@ export function PercentErrorCalculatorTool() {
           <div className="space-y-1.5">
             <Label htmlFor="pe-sigfigs">Round answer to</Label>
             <NativeSelect id="pe-sigfigs" value={sigFigs} onChange={(e) => setSigFigs(e.target.value)}>
-              <option value="auto">Auto — match the least precise value{autoSigFigs ? ` (${autoSigFigs})` : ''}</option>
+              <option value="auto">Auto — sig fig rules{autoN ? ` (${autoN})` : ''}</option>
               {[1, 2, 3, 4, 5].map((k) => (
                 <option key={k} value={k}>
                   {k} significant figure{k === 1 ? '' : 's'}
@@ -75,7 +75,14 @@ export function PercentErrorCalculatorTool() {
               <ResultValue label="Percent error" value={result.value.display} />
               <ResultStat label="Absolute error" value={String(Number(result.value.absoluteError.toPrecision(6)))} />
             </div>
-            <StepsList steps={result.value.steps} />
+            <StepsList
+              steps={
+                // Auto's reasoning goes just before the final Round step.
+                sigFigs === 'auto' && auto.ok
+                  ? [...result.value.steps.slice(0, -1), ...auto.value.steps, ...result.value.steps.slice(-1)]
+                  : result.value.steps
+              }
+            />
           </>
         ) : (
           <ResultMessage>{result.error}</ResultMessage>

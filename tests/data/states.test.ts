@@ -51,3 +51,16 @@ describe('state data', () => {
     expect(getState('nowhere')).toBeUndefined()
   })
 })
+
+describe('North Carolina cohorts', () => {
+  // Current high schoolers (classes of 2027–2029) don't need the computer science credit.
+  it('offers a plan for current students without the computer science credit', () => {
+    const nc = getState('north-carolina')!
+    expect(nc.appliesToClassOf).toBe('2027 and later')
+    const current = nc.plans.find((p) => p.name.includes('2027'))
+    expect(current?.subjects.some((s) => s.key === 'computer-science')).toBe(false)
+    expect(current?.totalCredits).toBe(22)
+    const future = nc.plans.find((p) => p.name.includes('2030'))
+    expect(future?.subjects.some((s) => s.key === 'computer-science')).toBe(true)
+  })
+})

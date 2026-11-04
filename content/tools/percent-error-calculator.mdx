@@ -10,8 +10,9 @@ percentage of the accepted value:
 3. Divide by the accepted value.
 4. Multiply by 100 to get a percentage.
 
-The result is then rounded. By default the calculator matches the least precise of your two values, which
-is how most lab reports handle [significant figures](/chemistry/sig-fig-calculator).
+The result is then rounded with the usual [significant figure](/chemistry/sig-fig-calculator) rules. The
+subtraction in step 1 keeps only the least precise decimal place, which can cost digits; the division in
+step 3 then keeps the fewer sig figs of that difference and the accepted value. Auto rounding does both.
 
 ## Worked example
 
@@ -20,9 +21,10 @@ You measure the density of aluminum as **2.81 g/cm³**. The accepted value is **
 1. 2.81 − 2.70 = 0.11
 2. 0.11 ÷ 2.70 = 0.04074
 3. 0.04074 × 100 = 4.074%
-4. Both values have 3 significant figures, so report **4.07%**.
+4. Both values have 3 significant figures, but the difference 0.11 has only 2 (subtraction keeps two
+   decimal places). Division keeps the fewer of 2 and 3, so report **4.1%**.
 
-If your class keeps the sign, the answer is +4.07%: your value was higher than the accepted one.
+If your class keeps the sign, the answer is +4.1%: your value was higher than the accepted one.
 
 ## When to use this
 
