@@ -1,0 +1,22 @@
+{
+  "slug": "example-university",
+  "name": "Example University",
+  "shortName": "Example",
+  "state": "CA",
+  "sources": [{ "label": "Example Registrar — Grading", "url": "https://registrar.example.edu/grading" }],
+  "lastChecked": "2026-11-04",
+  "scale": [
+    { "letter": "A", "points": 4 },
+    { "letter": "A-", "points": 3.7 },
+    { "letter": "B+", "points": 3.3 },
+    { "letter": "B", "points": 3 },
+    { "letter": "F", "points": 0 }
+  ],
+  "scaleNotes": ["A+ counts as 4.0"],
+  "nonGpaGrades": ["P", "NP"],
+  "honors": {
+    "basis": "fixed",
+    "rule": "Latin honors are awarded on the cumulative GPA at graduation.",
+    "schools": [{ "name": "All undergraduates", "cumLaude": 3.5, "magnaCumLaude": 3.7, "summaCumLaude": 3.9 }]
+  }
+}

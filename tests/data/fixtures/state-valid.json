@@ -1,0 +1,21 @@
+{
+  "slug": "example-state",
+  "name": "Example State",
+  "abbr": "EX",
+  "sources": [{ "label": "Example Dept. of Education", "url": "https://education.example.gov/graduation" }],
+  "lastChecked": "2026-11-04",
+  "appliesToClassOf": "2026 and later",
+  "plans": [
+    {
+      "name": "Standard diploma",
+      "totalCredits": 24,
+      "subjects": [
+        { "key": "english", "label": "English", "credits": 4 },
+        { "key": "math", "label": "Math", "credits": 4 },
+        { "key": "science", "label": "Science", "credits": 3 }
+      ]
+    }
+  ],
+  "otherRequirements": [],
+  "districtNote": "Districts may require more credits than the state minimum."
+}
