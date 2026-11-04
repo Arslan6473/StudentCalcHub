@@ -9,6 +9,7 @@ export const TOOL_COMPONENT_SLUGS = [
   'sig-fig-calculator',
   'grams-to-moles-calculator',
   'molarity-calculator',
+  'which-statistical-test',
 ] as const
 
 export type ToolComponentSlug = (typeof TOOL_COMPONENT_SLUGS)[number]

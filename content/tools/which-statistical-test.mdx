@@ -1,0 +1,52 @@
+## How it works
+
+Picking a test comes down to a few questions about your study:
+
+1. **What's your goal?** Compare groups, measure a relationship, predict an outcome, or check counts
+   against expected proportions.
+2. **What kind of outcome?** Continuous numbers, ordinal ranks, or categories.
+3. **How many groups, and are they paired?** The same subjects measured twice need a paired test.
+4. **Is the data roughly normal, or is the sample large?** If not, a rank-based (nonparametric) test is
+   the safer choice.
+5. **For count tables, are the expected counts at least 5?** If not, use an exact test.
+
+The chooser asks only the questions that matter for your path. You can click any earlier answer to go
+back and change it.
+
+## Worked example
+
+You want to know whether students who use flashcards score differently on a quiz from students who reread
+their notes. Thirty-five students are in each group.
+
+1. Goal: **compare groups**.
+2. Outcome: quiz score, which is **continuous**.
+3. **Two groups**, made of **different students**, so they're independent.
+4. 35 per group is more than 30, so the t-test is reasonable.
+
+Suggested test: an **independent t-test**. Welch's version is a safe default because it doesn't assume
+equal variances.
+
+## When to use this
+
+- Planning the analysis for a lab report, capstone or thesis.
+- Checking your choice on a statistics homework problem.
+- Before you calculate a [sample size](/statistics/sample-size-calculator), since the test you plan to use
+  affects how many subjects you need.
+
+## Common mistakes
+
+- **Using an independent test for paired data.** Before/after scores on the same students need a paired
+  test.
+- **Running many t-tests instead of ANOVA.** Comparing three groups two at a time inflates the chance of
+  a false positive.
+- **Using chi-square with small expected counts.** Switch to Fisher's exact test.
+- **Treating ranked ratings as exact measurements.** A 1–5 rating is ordinal; rank-based tests fit it
+  better.
+- **Reading correlation as causation.** A strong r shows that two things move together, not that one
+  causes the other.
+
+## Full flowchart
+
+Every path in the chooser, in one list. It prints cleanly on its own page.
+
+<TestFlowchart />

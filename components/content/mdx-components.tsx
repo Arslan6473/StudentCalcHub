@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import type { MDXRemoteProps } from 'next-mdx-remote/rsc'
 
+import { TestFlowchart } from '@/components/content/test-flowchart'
+
 /**
  * Custom element renderers for MDX content. Styled by hand rather than with a
  * typography plugin — there are few enough element types in a tool article
@@ -44,4 +46,5 @@ export const mdxComponents: MDXRemoteProps['components'] = {
   th: (props) => <th className="text-ink-muted px-3 py-2 font-medium" {...props} />,
   td: (props) => <td className="px-3 py-2" {...props} />,
   hr: () => <hr className="border-line my-8" />,
+  TestFlowchart,
 }
