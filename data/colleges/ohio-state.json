@@ -1,0 +1,49 @@
+{
+  "slug": "ohio-state",
+  "name": "The Ohio State University",
+  "shortName": "Ohio State",
+  "state": "OH",
+  "sources": [
+    { "label": "Ohio State Registrar — Diploma Information (Latin honors)", "url": "https://registrar.osu.edu/graduation-information/diploma-information/" },
+    { "label": "Ohio State Registrar — Transcript Key", "url": "https://registrar.osu.edu/student-hub/transcripts-and-verifications/transcript-key/" },
+    { "label": "Ohio State Board of Trustees — Rules 3335-8 (Instruction)", "url": "https://trustees.osu.edu/bylaws-and-rules/3335-8" }
+  ],
+  "lastChecked": "2026-11-04",
+  "scale": [
+    { "letter": "A", "points": 4.0 },
+    { "letter": "A-", "points": 3.7 },
+    { "letter": "B+", "points": 3.3 },
+    { "letter": "B", "points": 3.0 },
+    { "letter": "B-", "points": 2.7 },
+    { "letter": "C+", "points": 2.3 },
+    { "letter": "C", "points": 2.0 },
+    { "letter": "C-", "points": 1.7 },
+    { "letter": "D+", "points": 1.3 },
+    { "letter": "D", "points": 1.0 },
+    { "letter": "E", "points": 0.0 }
+  ],
+  "scaleNotes": [
+    "Ohio State has no A+ and no D-. The top grade is an A, worth 4.0 points.",
+    "E is Ohio State's failing grade and is worth 0 points.",
+    "EN (failure for not attending) is treated like an E and counts as 0 points in your GPA.",
+    "Ohio State calls the GPA the point-hour ratio."
+  ],
+  "nonGpaGrades": ["EM", "I", "IX", "K", "P", "PA", "NP", "PE", "R", "S", "U", "W", "NG"],
+  "honors": {
+    "basis": "fixed",
+    "rule": "Latin honors use your cumulative Ohio State GPA as of the term before you graduate. You need at least 60 credit hours of Ohio State courses graded A through D or S. Pass/non-pass (PA/NP) and PE credits, and repeated courses, do not count toward the 60 hours. All Ohio State courses toward the degree count in the GPA. Colleges may add their own extra rules.",
+    "schools": [
+      {
+        "name": "All undergraduates",
+        "cumLaude": 3.5,
+        "magnaCumLaude": 3.7,
+        "summaCumLaude": 3.9,
+        "extraRequirements": [
+          "At least 60 credit hours of Ohio State coursework graded A through D or S.",
+          "If you used a fresh start, only courses taken after the fresh start count."
+        ]
+      }
+    ]
+  },
+  "deansList": "Full-time students make the Dean's List with a term GPA of 3.5 or higher on at least 12 hours of graded courses, with no E, EN, NP, NEN, U, UEN, I, IX or NG marks that term. Part-time students can qualify with a 3.5 GPA on 12 graded hours spread over three terms."
+}

@@ -1,0 +1,111 @@
+{
+  "slug": "university-of-michigan",
+  "name": "University of Michigan",
+  "shortName": "Michigan",
+  "state": "MI",
+  "sources": [
+    {
+      "label": "Michigan Ross — BBA Academic Honors",
+      "url": "https://rossweb.bus.umich.edu/academics/bba-academic-honors/"
+    },
+    {
+      "label": "Michigan Ross — Undergraduate Programs Bulletin 2025-2026",
+      "url": "https://rossweb.bus.umich.edu/academics/wp-content/uploads/sites/2/2025/08/bbabulletin-2025-2026.pdf"
+    },
+    {
+      "label": "U-M Office of the Registrar — University Honors Criteria",
+      "url": "https://teamdynamix.umich.edu/TDClient/152/Portal/KB/Article/7403/University-Honors-Criteria"
+    }
+  ],
+  "lastChecked": "2026-11-04",
+  "scale": [
+    {
+      "letter": "A+",
+      "points": 4.0
+    },
+    {
+      "letter": "A",
+      "points": 4.0
+    },
+    {
+      "letter": "A-",
+      "points": 3.7
+    },
+    {
+      "letter": "B+",
+      "points": 3.3
+    },
+    {
+      "letter": "B",
+      "points": 3.0
+    },
+    {
+      "letter": "B-",
+      "points": 2.7
+    },
+    {
+      "letter": "C+",
+      "points": 2.3
+    },
+    {
+      "letter": "C",
+      "points": 2.0
+    },
+    {
+      "letter": "C-",
+      "points": 1.7
+    },
+    {
+      "letter": "D+",
+      "points": 1.3
+    },
+    {
+      "letter": "D",
+      "points": 1.0
+    },
+    {
+      "letter": "D-",
+      "points": 0.7
+    },
+    {
+      "letter": "E",
+      "points": 0.0
+    }
+  ],
+  "scaleNotes": [
+    "An A+ is worth 4.0 points, the same as an A.",
+    "Michigan uses E, not F, as its failing letter grade, and an E counts as 0 points.",
+    "Courses taken Pass/Fail, Credit/No Credit, or Satisfactory/Unsatisfactory do not count in your GPA."
+  ],
+  "nonGpaGrades": [
+    "P",
+    "F",
+    "CR",
+    "NC",
+    "S",
+    "U",
+    "Y",
+    "I",
+    "NR",
+    "NRC",
+    "X"
+  ],
+  "honors": {
+    "basis": "percentile",
+    "academicYear": "2024-25",
+    "rule": "Only the Ross School of Business is listed here, because it is the only Michigan school whose Latin honors cutoffs we could confirm on an official page. The College of Engineering also awards Latin honors with its own fixed GPA cutoffs (check the Engineering Bulletin), and LSA awards \"Distinction\" instead of Latin honors. Ross ranks its graduating BBA class by cumulative GPA: the top 5% earn summa cum laude, the rest of the top 15% earn magna cum laude, and the rest of the top 30% earn cum laude. The cutoffs are set each May from that year's graduating class, so the numbers shown are the lowest GPAs that qualified in 2024-25 and are only estimates for later years.",
+    "schools": [
+      {
+        "name": "Ross School of Business (BBA)",
+        "cumLaude": 3.766,
+        "magnaCumLaude": 3.859,
+        "summaCumLaude": 3.927,
+        "extraRequirements": [
+          "You must be approved for graduation.",
+          "Students who finish in Summer or Fall are judged with the cutoffs set the May before."
+        ]
+      }
+    ]
+  },
+  "deansList": "Michigan's version of a dean's list is called University Honors. You earn it for a term when you get a 3.5 GPA or higher while taking at least 14 credits, with at least 12 of them graded A through E."
+}

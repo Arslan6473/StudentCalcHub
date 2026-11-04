@@ -1,0 +1,89 @@
+{
+  "slug": "arizona-state",
+  "name": "Arizona State University",
+  "shortName": "ASU",
+  "state": "AZ",
+  "sources": [
+    {
+      "label": "ASU Registrar \u2014 Grades and grading policies",
+      "url": "https://registrar.asu.edu/grades"
+    },
+    {
+      "label": "ASU Catalog \u2014 University Undergraduate Graduation Requirements",
+      "url": "https://catalog.asu.edu/undergraduatereq"
+    }
+  ],
+  "lastChecked": "2026-11-04",
+  "scale": [
+    {
+      "letter": "A+",
+      "points": 4.33
+    },
+    {
+      "letter": "A",
+      "points": 4.0
+    },
+    {
+      "letter": "A-",
+      "points": 3.67
+    },
+    {
+      "letter": "B+",
+      "points": 3.33
+    },
+    {
+      "letter": "B",
+      "points": 3.0
+    },
+    {
+      "letter": "B-",
+      "points": 2.67
+    },
+    {
+      "letter": "C+",
+      "points": 2.33
+    },
+    {
+      "letter": "C",
+      "points": 2.0
+    },
+    {
+      "letter": "D",
+      "points": 1.0
+    },
+    {
+      "letter": "E",
+      "points": 0.0
+    }
+  ],
+  "scaleNotes": [
+    "An A+ is worth 4.33 points, but your cumulative GPA can never go above 4.00.",
+    "There are no C-, D+ or D- grades.",
+    "E is the failing grade at ASU (instead of F)."
+  ],
+  "nonGpaGrades": [
+    "P",
+    "Y",
+    "W",
+    "X",
+    "I",
+    "NR",
+    "Z"
+  ],
+  "honors": {
+    "basis": "fixed",
+    "rule": "ASU calls Latin honors \"graduation with academic recognition.\" It is only for bachelor's degrees and uses your cumulative GPA from courses taken at ASU only. Cum laude is 3.40 to 3.59, magna cum laude is 3.60 to 3.79, and summa cum laude is 3.80 to 4.00. The honor appears on your diploma and transcript.",
+    "schools": [
+      {
+        "name": "All undergraduates",
+        "cumLaude": 3.4,
+        "magnaCumLaude": 3.6,
+        "summaCumLaude": 3.8,
+        "extraRequirements": [
+          "Only ASU resident coursework counts toward the honors GPA",
+          "For a second bachelor's degree, honors are based on credits earned after the first degree, with at least 30 more resident credit hours"
+        ]
+      }
+    ]
+  }
+}

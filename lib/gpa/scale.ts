@@ -45,3 +45,13 @@ export function pointsToLetter(points: number, scale: LetterPoints[] = STANDARD_
   const tied = below.filter((r) => r.points === best)
   return (tied.find((r) => !r.letter.endsWith('+')) ?? tied[0]).letter
 }
+
+/** Grade points as published: 4 → '4.0', 3.67 → '3.67', 3.333 → '3.333'. */
+export function formatPoints(points: number): string {
+  return Number.isInteger(points) ? points.toFixed(1) : points.toString()
+}
+
+/** Dropdown label for a grade: "A- (3.67)", or just "3.7" when the grade is already its own point value. */
+export function gradeOptionLabel(letter: string, points: number): string {
+  return Number(letter) === points ? letter : `${letter} (${formatPoints(points)})`
+}

@@ -1,0 +1,97 @@
+{
+  "slug": "university-of-minnesota",
+  "name": "University of Minnesota Twin Cities",
+  "shortName": "UMN",
+  "state": "MN",
+  "sources": [
+    {
+      "label": "UMN Policy — Grading and Transcripts",
+      "url": "https://policy.umn.edu/education/gradingtranscripts"
+    },
+    {
+      "label": "UMN Policy — Degrees with Distinction and Honors FAQ",
+      "url": "https://policy.umn.edu/education/degreeshonors-faq"
+    }
+  ],
+  "lastChecked": "2026-11-04",
+  "scale": [
+    {
+      "letter": "A",
+      "points": 4.0
+    },
+    {
+      "letter": "A-",
+      "points": 3.667
+    },
+    {
+      "letter": "B+",
+      "points": 3.333
+    },
+    {
+      "letter": "B",
+      "points": 3.0
+    },
+    {
+      "letter": "B-",
+      "points": 2.667
+    },
+    {
+      "letter": "C+",
+      "points": 2.333
+    },
+    {
+      "letter": "C",
+      "points": 2.0
+    },
+    {
+      "letter": "C-",
+      "points": 1.667
+    },
+    {
+      "letter": "D+",
+      "points": 1.333
+    },
+    {
+      "letter": "D",
+      "points": 1.0
+    },
+    {
+      "letter": "F",
+      "points": 0.0
+    }
+  ],
+  "scaleNotes": [
+    "There is no A+ (except in the Law School) and no D-.",
+    "An F earns no credit but still counts in the GPA.",
+    "S/N grades do not count in the GPA. An S means C- work or better.",
+    "If you repeat a course, only the last attempt counts in your GPA."
+  ],
+  "nonGpaGrades": [
+    "S",
+    "N",
+    "I",
+    "V",
+    "W",
+    "X",
+    "K",
+    "NR"
+  ],
+  "honors": {
+    "basis": "fixed",
+    "rule": "Latin honors use the GPA of your last 60 graded credits taken at the Twin Cities campus. Transfer credits do not count. You must also complete the University Honors Program, including an honors thesis at the level you are aiming for. Students up to 0.100 below a cutoff may still get that level for exceptional thesis work, as decided by the honors program.",
+    "schools": [
+      {
+        "name": "All undergraduates",
+        "cumLaude": 3.5,
+        "magnaCumLaude": 3.666,
+        "summaCumLaude": 3.75,
+        "extraRequirements": [
+          "At least 60 graded credits on the Twin Cities campus",
+          "Must meet University Honors Program requirements",
+          "Honors thesis matching the Latin honors level"
+        ]
+      }
+    ]
+  },
+  "deansList": "Each term, students with a term GPA of 3.666 or higher and at least 12 credits graded A-F make the Dean's List."
+}

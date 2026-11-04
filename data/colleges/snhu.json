@@ -1,0 +1,47 @@
+{
+  "slug": "snhu",
+  "name": "Southern New Hampshire University",
+  "shortName": "SNHU",
+  "state": "NH",
+  "sources": [
+    { "label": "SNHU Office of the University Registrar — Expanded Transcript Key (rev. 10/27/2025)", "url": "https://www.snhu.edu/-/media/files/pdfs/expanded-transcript-key.pdf" },
+    { "label": "SNHU Graduation — Glossary of Terms", "url": "https://www.snhu.edu/student-experience/graduation/glossary-of-terms" }
+  ],
+  "lastChecked": "2026-11-04",
+  "scale": [
+    { "letter": "A", "points": 4.0 },
+    { "letter": "A-", "points": 3.67 },
+    { "letter": "B+", "points": 3.33 },
+    { "letter": "B", "points": 3.0 },
+    { "letter": "B-", "points": 2.67 },
+    { "letter": "C+", "points": 2.33 },
+    { "letter": "C", "points": 2.0 },
+    { "letter": "C-", "points": 1.67 },
+    { "letter": "D+", "points": 1.33 },
+    { "letter": "D", "points": 1.0 },
+    { "letter": "F", "points": 0.0 }
+  ],
+  "scaleNotes": [
+    "There is no A+ or D- grade.",
+    "IF (Incomplete Fail) and UF (Unearned Fail) count as 0 points in your GPA.",
+    "If you repeat a course, only the latest grade counts in your GPA."
+  ],
+  "nonGpaGrades": ["I", "AU", "CR", "IP", "IPT", "MA", "NG", "P", "S", "SDR", "T", "U", "W", "WF", "WP", "WV"],
+  "honors": {
+    "basis": "fixed",
+    "rule": "Latin honors go to bachelor's degree students based on their cumulative SNHU GPA when the degree is awarded. Cum laude is 3.500 to 3.699, magna cum laude is 3.700 to 3.849, and summa cum laude is 3.850 to 4.000. These cutoffs have applied since October 1, 2013. Graduate programs do not get Latin honors.",
+    "schools": [
+      {
+        "name": "All undergraduates",
+        "cumLaude": 3.5,
+        "magnaCumLaude": 3.7,
+        "summaCumLaude": 3.85,
+        "extraRequirements": [
+          "At least 60 credits completed at SNHU for a bachelor's degree",
+          "All program requirements and coursework completed"
+        ]
+      }
+    ]
+  },
+  "deansList": "Full-time undergraduates make the Dean's List with a term GPA from 3.500 to 3.699. A term GPA of 3.700 or higher earns the President's List instead."
+}

@@ -27,7 +27,7 @@ export const CollegeSchema = z.object({
   state: z.string().length(2),
   sources: z.array(SourceSchema).min(1),
   lastChecked: isoDate,
-  scale: z.array(z.object({ letter: z.string().min(1), points: z.number().min(0).max(4.3) })).min(5),
+  scale: z.array(z.object({ letter: z.string().min(1), points: z.number().min(0).max(4.33) })).min(5),
   scaleNotes: z.array(z.string()),
   nonGpaGrades: z.array(z.string()),
   honors: z

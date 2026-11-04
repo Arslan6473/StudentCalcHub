@@ -1,0 +1,52 @@
+{
+  "slug": "ucla",
+  "name": "University of California, Los Angeles",
+  "shortName": "UCLA",
+  "state": "CA",
+  "sources": [
+    { "label": "UCLA Registrar — Latin Honors", "url": "https://registrar.ucla.edu/registration-classes/graduation/final-degree-audit/honors" },
+    { "label": "UCLA General Catalog — Grades", "url": "https://catalog.registrar.ucla.edu/Policies-and-Regulations/Academic-Policies/Grades" },
+    { "label": "UCLA Academic Senate — Divisional Regulations (A-307, 340)", "url": "https://senate.ucla.edu/BylawsandRegulations/volume-2" }
+  ],
+  "lastChecked": "2026-11-04",
+  "scale": [
+    { "letter": "A+", "points": 4.0 },
+    { "letter": "A", "points": 4.0 },
+    { "letter": "A-", "points": 3.7 },
+    { "letter": "B+", "points": 3.3 },
+    { "letter": "B", "points": 3.0 },
+    { "letter": "B-", "points": 2.7 },
+    { "letter": "C+", "points": 2.3 },
+    { "letter": "C", "points": 2.0 },
+    { "letter": "C-", "points": 1.7 },
+    { "letter": "D+", "points": 1.3 },
+    { "letter": "D", "points": 1.0 },
+    { "letter": "D-", "points": 0.7 },
+    { "letter": "F", "points": 0.0 }
+  ],
+  "scaleNotes": [
+    "An A+ is worth 4.0 points, the same as an A.",
+    "Plus and minus grades move the value up or down by 0.3 points.",
+    "Your GPA is your total grade points divided by the units you attempted for a letter grade."
+  ],
+  "nonGpaGrades": ["P", "NP", "DR", "I", "IP", "NR"],
+  "honors": {
+    "basis": "percentile",
+    "academicYear": "2026-27",
+    "rule": "Latin honors go to roughly the top 20% of graduates in each college or school: summa for the top 5%, magna for the next 5%, and cum laude for the next 10%. The GPA cutoffs are reset every year, and your overall UC GPA at graduation is what counts. You need at least 90 UC units taken for a letter grade.",
+    "schools": [
+      { "name": "School of the Arts and Architecture", "cumLaude": 3.946, "magnaCumLaude": 3.979, "summaCumLaude": 3.987, "extraRequirements": [] },
+      { "name": "School of Education and Information Studies", "cumLaude": 3.925, "magnaCumLaude": 3.980, "summaCumLaude": 3.993, "extraRequirements": [] },
+      { "name": "School of Engineering and Applied Science", "cumLaude": 3.873, "magnaCumLaude": 3.942, "summaCumLaude": 3.970, "extraRequirements": [
+        "Your GPA in upper-division courses used for the engineering degree must also meet the cutoff.",
+        "You need at least a 3.25 GPA in upper-division courses in your major."
+      ] },
+      { "name": "College of Letters and Science", "cumLaude": 3.921, "magnaCumLaude": 3.970, "summaCumLaude": 3.992, "extraRequirements": [] },
+      { "name": "School of Music", "cumLaude": 3.929, "magnaCumLaude": 3.974, "summaCumLaude": 3.993, "extraRequirements": [] },
+      { "name": "School of Nursing", "cumLaude": 3.921, "magnaCumLaude": 3.970, "summaCumLaude": 3.992, "extraRequirements": [] },
+      { "name": "School of Public Affairs", "cumLaude": 3.973, "magnaCumLaude": 3.992, "summaCumLaude": 4.0, "extraRequirements": [] },
+      { "name": "School of Public Health", "cumLaude": 3.921, "magnaCumLaude": 3.970, "summaCumLaude": 3.992, "extraRequirements": [] },
+      { "name": "School of Theater, Film, and Television", "cumLaude": 3.961, "magnaCumLaude": 3.985, "summaCumLaude": 3.991, "extraRequirements": [] }
+    ]
+  }
+}

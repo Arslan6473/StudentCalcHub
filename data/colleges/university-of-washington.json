@@ -1,0 +1,266 @@
+{
+  "slug": "university-of-washington",
+  "name": "University of Washington",
+  "shortName": "UW",
+  "state": "WA",
+  "sources": [
+    {
+      "label": "UW Registrar — Baccalaureate Honors",
+      "url": "https://registrar.washington.edu/students/honors"
+    },
+    {
+      "label": "UW General Catalog — Grading System",
+      "url": "https://www.washington.edu/students/gencat/front/Grading_Sys.html"
+    },
+    {
+      "label": "UW Registrar — Dean's Lists",
+      "url": "https://registrar.washington.edu/students/deans-list/"
+    }
+  ],
+  "lastChecked": "2026-11-04",
+  "scale": [
+    {
+      "letter": "4.0",
+      "points": 4.0
+    },
+    {
+      "letter": "3.9",
+      "points": 3.9
+    },
+    {
+      "letter": "3.8",
+      "points": 3.8
+    },
+    {
+      "letter": "3.7",
+      "points": 3.7
+    },
+    {
+      "letter": "3.6",
+      "points": 3.6
+    },
+    {
+      "letter": "3.5",
+      "points": 3.5
+    },
+    {
+      "letter": "3.4",
+      "points": 3.4
+    },
+    {
+      "letter": "3.3",
+      "points": 3.3
+    },
+    {
+      "letter": "3.2",
+      "points": 3.2
+    },
+    {
+      "letter": "3.1",
+      "points": 3.1
+    },
+    {
+      "letter": "3.0",
+      "points": 3.0
+    },
+    {
+      "letter": "2.9",
+      "points": 2.9
+    },
+    {
+      "letter": "2.8",
+      "points": 2.8
+    },
+    {
+      "letter": "2.7",
+      "points": 2.7
+    },
+    {
+      "letter": "2.6",
+      "points": 2.6
+    },
+    {
+      "letter": "2.5",
+      "points": 2.5
+    },
+    {
+      "letter": "2.4",
+      "points": 2.4
+    },
+    {
+      "letter": "2.3",
+      "points": 2.3
+    },
+    {
+      "letter": "2.2",
+      "points": 2.2
+    },
+    {
+      "letter": "2.1",
+      "points": 2.1
+    },
+    {
+      "letter": "2.0",
+      "points": 2.0
+    },
+    {
+      "letter": "1.9",
+      "points": 1.9
+    },
+    {
+      "letter": "1.8",
+      "points": 1.8
+    },
+    {
+      "letter": "1.7",
+      "points": 1.7
+    },
+    {
+      "letter": "1.6",
+      "points": 1.6
+    },
+    {
+      "letter": "1.5",
+      "points": 1.5
+    },
+    {
+      "letter": "1.4",
+      "points": 1.4
+    },
+    {
+      "letter": "1.3",
+      "points": 1.3
+    },
+    {
+      "letter": "1.2",
+      "points": 1.2
+    },
+    {
+      "letter": "1.1",
+      "points": 1.1
+    },
+    {
+      "letter": "1.0",
+      "points": 1.0
+    },
+    {
+      "letter": "0.9",
+      "points": 0.9
+    },
+    {
+      "letter": "0.8",
+      "points": 0.8
+    },
+    {
+      "letter": "0.7",
+      "points": 0.7
+    },
+    {
+      "letter": "0.0",
+      "points": 0.0
+    }
+  ],
+  "scaleNotes": [
+    "UW gives number grades from 4.0 down to 0.7 in steps of 0.1, plus 0.0. The number itself is used in the GPA.",
+    "Letter equivalents for undergraduates: A = 4.0–3.9, A- = 3.8–3.5, B+ = 3.4–3.2, B = 3.1–2.9, B- = 2.8–2.5, C+ = 2.4–2.2, C = 2.1–1.9, C- = 1.8–1.5, D+ = 1.4–1.2, D = 1.1–0.9, D- = 0.8–0.7.",
+    "0.7 is the lowest passing grade. Grades from 0.6 to 0.1 are not given; they become 0.0.",
+    "A 0.0 (also shown as E) earns no credit but still counts in the GPA.",
+    "Only courses taken at UW count in the UW GPA."
+  ],
+  "nonGpaGrades": [
+    "N",
+    "I",
+    "S",
+    "NS",
+    "CR",
+    "NC",
+    "W",
+    "HW",
+    "RD"
+  ],
+  "honors": {
+    "basis": "percentile",
+    "academicYear": "2025-26",
+    "rule": "Honors use your UW cumulative GPA and are only for a first bachelor's degree. You need at least 90 credits earned at UW, with at least 60 of them number-graded. Each year UW sets GPA cutoffs so that about the top 0.5% get summa cum laude, the next 3% magna cum laude, and the next 6.5% cum laude. The cutoffs shown are for the Seattle campus, by college or school, for students finishing Autumn 2025 through Summer 2026. UW Bothell and UW Tacoma publish their own cutoffs.",
+    "schools": [
+      {
+        "name": "Arts & Sciences",
+        "cumLaude": 3.91,
+        "magnaCumLaude": 3.97,
+        "summaCumLaude": 4.0,
+        "extraRequirements": []
+      },
+      {
+        "name": "Built Environments",
+        "cumLaude": 3.83,
+        "magnaCumLaude": 3.88,
+        "summaCumLaude": 3.95,
+        "extraRequirements": []
+      },
+      {
+        "name": "Business School",
+        "cumLaude": 3.83,
+        "magnaCumLaude": 3.9,
+        "summaCumLaude": 3.96,
+        "extraRequirements": []
+      },
+      {
+        "name": "Education",
+        "cumLaude": 3.96,
+        "magnaCumLaude": 3.99,
+        "summaCumLaude": 4.0,
+        "extraRequirements": []
+      },
+      {
+        "name": "Engineering",
+        "cumLaude": 3.86,
+        "magnaCumLaude": 3.93,
+        "summaCumLaude": 3.99,
+        "extraRequirements": []
+      },
+      {
+        "name": "Environment",
+        "cumLaude": 3.86,
+        "magnaCumLaude": 3.94,
+        "summaCumLaude": 3.99,
+        "extraRequirements": []
+      },
+      {
+        "name": "Information School",
+        "cumLaude": 3.91,
+        "magnaCumLaude": 3.95,
+        "summaCumLaude": 3.98,
+        "extraRequirements": []
+      },
+      {
+        "name": "Medicine",
+        "cumLaude": 3.88,
+        "magnaCumLaude": 3.92,
+        "summaCumLaude": 3.96,
+        "extraRequirements": []
+      },
+      {
+        "name": "Nursing",
+        "cumLaude": 3.98,
+        "magnaCumLaude": 3.99,
+        "summaCumLaude": 4.0,
+        "extraRequirements": []
+      },
+      {
+        "name": "Public Health",
+        "cumLaude": 3.87,
+        "magnaCumLaude": 3.92,
+        "summaCumLaude": 3.99,
+        "extraRequirements": []
+      },
+      {
+        "name": "Social Work",
+        "cumLaude": 3.95,
+        "magnaCumLaude": 3.98,
+        "summaCumLaude": 4.0,
+        "extraRequirements": []
+      }
+    ]
+  },
+  "deansList": "For a quarter's Dean's List, you need a 3.50 or higher GPA that quarter in at least 12 graded credits while working on your first bachelor's degree. The Annual Dean's List needs that 3.50 in 12 or more number-graded credits in each of three quarters of the school year."
+}

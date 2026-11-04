@@ -1,0 +1,46 @@
+{
+  "slug": "uc-san-diego",
+  "name": "University of California, San Diego",
+  "shortName": "UC San Diego",
+  "state": "CA",
+  "sources": [
+    { "label": "UC San Diego TritonLink — Latin Honors", "url": "https://students.ucsd.edu/academics/advising/degrees-diplomas/latin-honors.html" },
+    { "label": "UC San Diego General Catalog — Academic Regulations", "url": "https://catalog.ucsd.edu/academic-regulations.html" },
+    { "label": "UC San Diego Academic Advising — Academic Honors", "url": "https://advising.ucsd.edu/students/degree-requirements/honors.html" }
+  ],
+  "lastChecked": "2026-11-04",
+  "scale": [
+    { "letter": "A+", "points": 4.0 },
+    { "letter": "A", "points": 4.0 },
+    { "letter": "A-", "points": 3.7 },
+    { "letter": "B+", "points": 3.3 },
+    { "letter": "B", "points": 3.0 },
+    { "letter": "B-", "points": 2.7 },
+    { "letter": "C+", "points": 2.3 },
+    { "letter": "C", "points": 2.0 },
+    { "letter": "C-", "points": 1.7 },
+    { "letter": "D", "points": 1.0 },
+    { "letter": "F", "points": 0.0 }
+  ],
+  "scaleNotes": [
+    "An A+ is worth 4.0 points, the same as an A.",
+    "There is no D+ or D- at UC San Diego; plus and minus only go on A, B, and C grades.",
+    "Your GPA is your grade points divided by the units of letter-graded courses you finished."
+  ],
+  "nonGpaGrades": ["I", "IP", "P", "NP", "S", "U", "W"],
+  "honors": {
+    "basis": "percentile",
+    "academicYear": "2026-27",
+    "rule": "About the top 14% of graduating seniors campus-wide earn Latin honors: roughly the top 2% get summa, the next 4% get magna, and the next 8% get cum laude. Ranking uses your cumulative UC GPA, cut off at three decimal places with no rounding. You need letter grades in at least 72 quarter-units of UC coursework. The cutoffs shown apply to students graduating Fall 2026 through Summer 2027.",
+    "schools": [
+      {
+        "name": "All undergraduates",
+        "cumLaude": 3.888,
+        "magnaCumLaude": 3.959,
+        "summaCumLaude": 3.991,
+        "extraRequirements": ["At least 72 quarter-units of UC coursework taken for a letter grade"]
+      }
+    ]
+  },
+  "deansList": "UC San Diego's version of a dean's list is called Provost Honors, given by your college each quarter. You earn it with a UC GPA of 3.5 or higher in at least 12 graded units at UC San Diego, with no D, F, or NP that quarter."
+}

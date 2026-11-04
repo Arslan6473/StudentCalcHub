@@ -1,0 +1,55 @@
+{
+  "slug": "penn-state",
+  "name": "The Pennsylvania State University",
+  "shortName": "Penn State",
+  "state": "PA",
+  "sources": [
+    { "label": "Penn State Registrar — Graduation with Distinction (distinction table)", "url": "https://www.registrar.psu.edu/graduation/distinction.cfm" },
+    { "label": "Penn State Undergraduate Bulletin — Distinction and Honors", "url": "https://bulletins.psu.edu/undergraduate/general-information/academic-information/registration-academic-records/distinction-honors/" },
+    { "label": "Penn State University Faculty Senate — Policies 47-00, 48-00 and 49-00 (Grades)", "url": "https://senate.psu.edu/students/policies-and-rules-for-undergraduate-students/47-00-48-00-and-49-00-grades/" }
+  ],
+  "lastChecked": "2026-11-04",
+  "scale": [
+    { "letter": "A", "points": 4.0 },
+    { "letter": "A-", "points": 3.67 },
+    { "letter": "B+", "points": 3.33 },
+    { "letter": "B", "points": 3.0 },
+    { "letter": "B-", "points": 2.67 },
+    { "letter": "C+", "points": 2.33 },
+    { "letter": "C", "points": 2.0 },
+    { "letter": "D", "points": 1.0 },
+    { "letter": "F", "points": 0.0 }
+  ],
+  "scaleNotes": [
+    "Penn State has no A+, C-, D+ or D-. A C is followed directly by a D.",
+    "XF (a failing grade given for academic dishonesty) counts the same as an F.",
+    "Courses taken satisfactory/unsatisfactory, pass/fail or audit do not count in the GPA."
+  ],
+  "nonGpaGrades": ["SA", "UN", "AUS", "AUU", "CRX", "TR", "DF", "NG", "R", "W", "LD"],
+  "honors": {
+    "basis": "percentile",
+    "academicYear": "2026-27",
+    "rule": "Penn State calls Latin honors 'graduation with distinction.' You must be in the top 12% of your college's graduating class, have at least a 3.50 cumulative GPA, and have earned at least 60 credits at Penn State. The top 2% get summa, the next 4% magna and the next 6% cum laude. Each September the Registrar sets GPA cutoffs for that year from the GPAs of past graduates. These cutoffs are for bachelor's degrees given from Fall 2026 through Summer 2027. Your level uses your final cumulative GPA in the term your degree is given.",
+    "schools": [
+      { "name": "Arts and Architecture", "cumLaude": 3.92, "magnaCumLaude": 3.96, "summaCumLaude": 3.99, "extraRequirements": [] },
+      { "name": "Abington College", "cumLaude": 3.85, "magnaCumLaude": 3.94, "summaCumLaude": 3.99, "extraRequirements": [] },
+      { "name": "Agricultural Sciences", "cumLaude": 3.83, "magnaCumLaude": 3.92, "summaCumLaude": 3.99, "extraRequirements": [] },
+      { "name": "Altoona College", "cumLaude": 3.88, "magnaCumLaude": 3.95, "summaCumLaude": 4.0, "extraRequirements": [] },
+      { "name": "Smeal College of Business", "cumLaude": 3.87, "magnaCumLaude": 3.93, "summaCumLaude": 3.98, "extraRequirements": [] },
+      { "name": "Behrend College", "cumLaude": 3.83, "magnaCumLaude": 3.92, "summaCumLaude": 3.98, "extraRequirements": [] },
+      { "name": "Berks College", "cumLaude": 3.88, "magnaCumLaude": 3.94, "summaCumLaude": 3.99, "extraRequirements": [] },
+      { "name": "Capital College", "cumLaude": 3.87, "magnaCumLaude": 3.94, "summaCumLaude": 3.99, "extraRequirements": [] },
+      { "name": "Communications", "cumLaude": 3.82, "magnaCumLaude": 3.89, "summaCumLaude": 3.96, "extraRequirements": [] },
+      { "name": "Education", "cumLaude": 3.93, "magnaCumLaude": 3.98, "summaCumLaude": 4.0, "extraRequirements": [] },
+      { "name": "Earth and Mineral Sciences", "cumLaude": 3.87, "magnaCumLaude": 3.94, "summaCumLaude": 3.99, "extraRequirements": [] },
+      { "name": "Engineering", "cumLaude": 3.86, "magnaCumLaude": 3.93, "summaCumLaude": 3.99, "extraRequirements": [] },
+      { "name": "Health and Human Development", "cumLaude": 3.86, "magnaCumLaude": 3.93, "summaCumLaude": 3.99, "extraRequirements": [] },
+      { "name": "Intercollege", "cumLaude": 3.82, "magnaCumLaude": 3.93, "summaCumLaude": 3.99, "extraRequirements": [] },
+      { "name": "Information Sciences and Technology", "cumLaude": 3.86, "magnaCumLaude": 3.93, "summaCumLaude": 3.98, "extraRequirements": [] },
+      { "name": "Liberal Arts", "cumLaude": 3.87, "magnaCumLaude": 3.94, "summaCumLaude": 3.99, "extraRequirements": [] },
+      { "name": "Nursing", "cumLaude": 3.86, "magnaCumLaude": 3.93, "summaCumLaude": 3.98, "extraRequirements": [] },
+      { "name": "Science", "cumLaude": 3.91, "magnaCumLaude": 3.96, "summaCumLaude": 4.0, "extraRequirements": [] },
+      { "name": "University College", "cumLaude": 3.89, "magnaCumLaude": 3.95, "summaCumLaude": 4.0, "extraRequirements": [] }
+    ]
+  }
+}

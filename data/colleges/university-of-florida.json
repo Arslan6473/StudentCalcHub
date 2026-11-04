@@ -1,0 +1,267 @@
+{
+  "slug": "university-of-florida",
+  "name": "University of Florida",
+  "shortName": "UF",
+  "state": "FL",
+  "sources": [
+    {
+      "label": "UF Undergraduate Catalog — Academic Honors",
+      "url": "https://catalog.ufl.edu/UGRD/academic-advising/academic-honors/"
+    },
+    {
+      "label": "UF Undergraduate Catalog — Grades and Grading Policies",
+      "url": "https://catalog.ufl.edu/UGRD/academic-regulations/grades-grading-policies/"
+    }
+  ],
+  "lastChecked": "2026-11-04",
+  "scale": [
+    {
+      "letter": "A",
+      "points": 4.0
+    },
+    {
+      "letter": "A-",
+      "points": 3.67
+    },
+    {
+      "letter": "B+",
+      "points": 3.33
+    },
+    {
+      "letter": "B",
+      "points": 3.0
+    },
+    {
+      "letter": "B-",
+      "points": 2.67
+    },
+    {
+      "letter": "C+",
+      "points": 2.33
+    },
+    {
+      "letter": "C",
+      "points": 2.0
+    },
+    {
+      "letter": "C-",
+      "points": 1.67
+    },
+    {
+      "letter": "D+",
+      "points": 1.33
+    },
+    {
+      "letter": "D",
+      "points": 1.0
+    },
+    {
+      "letter": "D-",
+      "points": 0.67
+    },
+    {
+      "letter": "E",
+      "points": 0.0
+    }
+  ],
+  "scaleNotes": [
+    "UF has no A+. The top grade is an A, worth 4.0 points.",
+    "E is UF's failing grade and is worth 0 points.",
+    "WF (withdrew failing), I (incomplete) and NG (no grade) also count as failing grades worth 0 points in your GPA.",
+    "This scale applies to credit earned from May 11, 2009 on. Older credit used a different scale."
+  ],
+  "nonGpaGrades": [
+    "S",
+    "U",
+    "W",
+    "H",
+    "I*",
+    "N*"
+  ],
+  "honors": {
+    "basis": "fixed",
+    "rule": "Each UF college sets its own honors cutoffs, and many also require a thesis or project for magna and summa cum laude. Most colleges use your GPA on UF courses taken after you reach 60 credits, or your upper-division GPA. The GPA is cut off at two decimal places, not rounded (3.495 counts as 3.49). Transfer credits and S/U credits are left out. Some majors add their own GPA or course rules on top of these, so check with your college. Education, Health and Human Performance, Theatre and Dance, and Pharmacy are not listed here because their published cutoffs give two honors levels the same GPA (or, for Pharmacy, apply to the PharmD); see the UF catalog for those colleges.",
+    "schools": [
+      {
+        "name": "College of Agricultural and Life Sciences",
+        "cumLaude": 3.5,
+        "magnaCumLaude": 3.75,
+        "summaCumLaude": 3.85,
+        "extraRequirements": [
+          "GPA is based on all UF courses taken after reaching 60 credits.",
+          "Magna and summa cum laude require an approved research project or creative work and an honors thesis."
+        ]
+      },
+      {
+        "name": "College of the Arts — Art and Art History",
+        "cumLaude": 3.5,
+        "magnaCumLaude": 3.75,
+        "summaCumLaude": 3.9,
+        "extraRequirements": [
+          "GPA is based on upper-division UF courses, counted from the term after reaching 60 credits.",
+          "Magna and summa cum laude require a creative project or thesis and a department recommendation."
+        ]
+      },
+      {
+        "name": "College of the Arts — Digital Arts and Sciences",
+        "cumLaude": 3.5,
+        "magnaCumLaude": 3.75,
+        "summaCumLaude": 3.9,
+        "extraRequirements": [
+          "GPA is based on upper-division UF courses, counted from the term after reaching 60 credits.",
+          "Magna and summa cum laude require a creative project and a department recommendation."
+        ]
+      },
+      {
+        "name": "College of the Arts — Music and Music Education",
+        "cumLaude": 3.4,
+        "magnaCumLaude": 3.75,
+        "summaCumLaude": 3.9,
+        "extraRequirements": [
+          "GPA is based on upper-division UF courses, counted from the term after reaching 60 credits.",
+          "Magna and summa cum laude require a creative project or thesis and a department recommendation."
+        ]
+      },
+      {
+        "name": "Heavener School of Business",
+        "cumLaude": 3.5,
+        "magnaCumLaude": 3.7,
+        "summaCumLaude": 3.9,
+        "extraRequirements": [
+          "The GPA must be met in UF, core and major courses.",
+          "Magna and summa cum laude require 90 credits before enrolling in the honors thesis course, plus an approved thesis."
+        ]
+      },
+      {
+        "name": "Fisher School of Accounting",
+        "cumLaude": 3.2,
+        "magnaCumLaude": 3.6,
+        "summaCumLaude": 3.8,
+        "extraRequirements": [
+          "The GPA must be met in both upper-division accounting courses and the upper-division GPA.",
+          "Magna and summa cum laude require completing ACG 4970 with a thesis and abstract."
+        ]
+      },
+      {
+        "name": "Rinker School of Construction Management",
+        "cumLaude": 3.3,
+        "magnaCumLaude": 3.6,
+        "summaCumLaude": 3.75,
+        "extraRequirements": [
+          "GPA is based on all upper-division courses.",
+          "Magna and summa cum laude require an approved research project and a formal presentation."
+        ]
+      },
+      {
+        "name": "College of Design, Construction and Planning — Architecture",
+        "cumLaude": 3.3,
+        "magnaCumLaude": 3.6,
+        "summaCumLaude": 3.8,
+        "extraRequirements": [
+          "GPA is based on all upper-division courses.",
+          "Magna and summa cum laude require an approved fourth-year design project."
+        ]
+      },
+      {
+        "name": "College of Design, Construction and Planning — Interior Design",
+        "cumLaude": 3.3,
+        "magnaCumLaude": 3.6,
+        "summaCumLaude": 3.8,
+        "extraRequirements": [
+          "GPA is based on all upper-division courses.",
+          "Magna and summa cum laude require an approved fourth-year design project."
+        ]
+      },
+      {
+        "name": "College of Design, Construction and Planning — Landscape Architecture",
+        "cumLaude": 3.2,
+        "magnaCumLaude": 3.5,
+        "summaCumLaude": 3.75,
+        "extraRequirements": [
+          "GPA is based on all upper-division courses.",
+          "Magna and summa cum laude require an approved design project."
+        ]
+      },
+      {
+        "name": "College of Design, Construction and Planning — Sustainability and the Built Environment",
+        "cumLaude": 3.5,
+        "magnaCumLaude": 3.65,
+        "summaCumLaude": 3.8,
+        "extraRequirements": [
+          "GPA is based on all upper-division courses.",
+          "Magna and summa cum laude require an approved fourth-year project."
+        ]
+      },
+      {
+        "name": "College of Design, Construction and Planning — Urban Sciences and Planning",
+        "cumLaude": 3.5,
+        "magnaCumLaude": 3.6,
+        "summaCumLaude": 3.8,
+        "extraRequirements": [
+          "GPA is based on all upper-division courses.",
+          "Magna and summa cum laude require an approved fourth-year project."
+        ]
+      },
+      {
+        "name": "Herbert Wertheim College of Engineering",
+        "cumLaude": 3.3,
+        "magnaCumLaude": 3.5,
+        "summaCumLaude": 3.8,
+        "extraRequirements": [
+          "GPA is based on all UF courses taken after reaching 60 credits.",
+          "Magna and summa cum laude require an approved research project or creative work."
+        ]
+      },
+      {
+        "name": "Hamilton School of Classical and Civic Education",
+        "cumLaude": 3.5,
+        "magnaCumLaude": 3.75,
+        "summaCumLaude": 3.9,
+        "extraRequirements": [
+          "GPA is based on all upper-division coursework.",
+          "Magna and summa cum laude require a senior paper, thesis or project.",
+          "Summa cum laude also requires a faculty recommendation."
+        ]
+      },
+      {
+        "name": "College of Journalism and Communications",
+        "cumLaude": 3.5,
+        "magnaCumLaude": 3.7,
+        "summaCumLaude": 3.85,
+        "extraRequirements": [
+          "GPA is based on all UF courses taken after reaching 60 credits, not counting internship and professional courses."
+        ]
+      },
+      {
+        "name": "College of Liberal Arts and Sciences",
+        "cumLaude": 3.5,
+        "extraRequirements": [
+          "GPA is based on all UF courses taken after reaching 60 credits.",
+          "Magna and summa cum laude need the same 3.50 college minimum plus a thesis, research project or creative work. Faculty review the work and the department decides the level.",
+          "Many majors set their own higher GPA or course rules for magna and summa cum laude."
+        ]
+      },
+      {
+        "name": "College of Nursing",
+        "cumLaude": 3.7,
+        "magnaCumLaude": 3.8,
+        "summaCumLaude": 3.9,
+        "extraRequirements": [
+          "GPA is based on all upper-division nursing courses.",
+          "All three levels require finishing the nursing honors program."
+        ]
+      },
+      {
+        "name": "College of Public Health and Health Professions",
+        "cumLaude": 3.5,
+        "magnaCumLaude": 3.75,
+        "summaCumLaude": 3.85,
+        "extraRequirements": [
+          "GPA is based on UF courses taken after reaching 60 credits.",
+          "Magna and summa cum laude require an honors thesis course sequence (HSC 4969/4970 or SPA 4931, depending on major), no conduct or honor code violations, and a Dean's review of the thesis."
+        ]
+      }
+    ]
+  },
+  "deansList": "Each UF college sets its own Dean's List rule. Most require a term GPA between 3.50 and 3.75 on at least 12 graded credits (Engineering uses 3.20 on 14 credits). S/U grades do not count. A perfect 4.0 on at least 15 graded credits in fall or spring (12 in summer) earns the President's Honor Roll."
+}

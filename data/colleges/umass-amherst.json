@@ -1,0 +1,148 @@
+{
+  "slug": "umass-amherst",
+  "name": "University of Massachusetts Amherst",
+  "shortName": "UMass Amherst",
+  "state": "MA",
+  "sources": [
+    {
+      "label": "UMass Amherst Registrar — Latin Honors Information",
+      "url": "https://www.umass.edu/registrar/latin-honors-information"
+    },
+    {
+      "label": "UMass Amherst Undergraduate Guide — Graduation with Honors",
+      "url": "https://catalog.umass.edu/undergradguide/2025-2026/Page25194.html"
+    },
+    {
+      "label": "UMass Amherst Registrar — Grading System & GPA Calculation",
+      "url": "https://www.umass.edu/registrar/grading-system-gpa-calculation"
+    }
+  ],
+  "lastChecked": "2026-11-04",
+  "scale": [
+    {
+      "letter": "A",
+      "points": 4.0
+    },
+    {
+      "letter": "A-",
+      "points": 3.7
+    },
+    {
+      "letter": "B+",
+      "points": 3.3
+    },
+    {
+      "letter": "B",
+      "points": 3.0
+    },
+    {
+      "letter": "B-",
+      "points": 2.7
+    },
+    {
+      "letter": "C+",
+      "points": 2.3
+    },
+    {
+      "letter": "C",
+      "points": 2.0
+    },
+    {
+      "letter": "C-",
+      "points": 1.7
+    },
+    {
+      "letter": "D+",
+      "points": 1.3
+    },
+    {
+      "letter": "D",
+      "points": 1.0
+    },
+    {
+      "letter": "F",
+      "points": 0.0
+    }
+  ],
+  "scaleNotes": [
+    "There is no A+ or D-.",
+    "For undergraduates, INC (incomplete) and IF (incomplete failure) count as 0.0, like an F, until a final grade comes in.",
+    "Grades from transfer courses are not in the UMass GPA, but Five College cross-registered courses are."
+  ],
+  "nonGpaGrades": [
+    "AUD",
+    "CR",
+    "DR",
+    "IP",
+    "NR",
+    "P",
+    "SAT",
+    "W",
+    "WF",
+    "WP",
+    "Y"
+  ],
+  "honors": {
+    "basis": "percentile",
+    "academicYear": "2026-27",
+    "rule": "You need at least 45 graded credits at UMass Amherst. Honors go to the top of your school or college's graduating class by GPA: top 5% for summa cum laude, top 10% for magna, and top 25% for cum laude. The GPA cutoffs are based on the average of the past three graduating classes. The ones shown are for September 2026 through May 2027 graduates.",
+    "schools": [
+      {
+        "name": "College of Humanities & Fine Arts",
+        "cumLaude": 3.888,
+        "magnaCumLaude": 3.965,
+        "summaCumLaude": 3.988,
+        "extraRequirements": []
+      },
+      {
+        "name": "College of Information and Computer Sciences",
+        "cumLaude": 3.87,
+        "magnaCumLaude": 3.968,
+        "summaCumLaude": 3.991,
+        "extraRequirements": []
+      },
+      {
+        "name": "College of Natural Sciences",
+        "cumLaude": 3.858,
+        "magnaCumLaude": 3.965,
+        "summaCumLaude": 3.99,
+        "extraRequirements": []
+      },
+      {
+        "name": "SBS, Education, BDIC, EDUC, UWW, and BGS",
+        "cumLaude": 3.837,
+        "magnaCumLaude": 3.955,
+        "summaCumLaude": 3.99,
+        "extraRequirements": []
+      },
+      {
+        "name": "Riccio College of Engineering",
+        "cumLaude": 3.718,
+        "magnaCumLaude": 3.883,
+        "summaCumLaude": 3.951,
+        "extraRequirements": []
+      },
+      {
+        "name": "Isenberg School of Management",
+        "cumLaude": 3.889,
+        "magnaCumLaude": 3.961,
+        "summaCumLaude": 3.986,
+        "extraRequirements": []
+      },
+      {
+        "name": "Elaine Marieb College of Nursing",
+        "cumLaude": 3.89,
+        "magnaCumLaude": 3.977,
+        "summaCumLaude": 3.99,
+        "extraRequirements": []
+      },
+      {
+        "name": "School of Public Health & Health Sciences",
+        "cumLaude": 3.827,
+        "magnaCumLaude": 3.941,
+        "summaCumLaude": 3.976,
+        "extraRequirements": []
+      }
+    ]
+  }
+}

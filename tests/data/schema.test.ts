@@ -19,6 +19,12 @@ describe('data schemas', () => {
     expect(CollegeSchema.safeParse(ok).success).toBe(true)
   })
 
+  it('accepts an A+ worth 4.33 points (e.g. ASU) but nothing above', () => {
+    const withAPlus = (points: number) => ({ ...college, scale: [{ letter: 'A+', points }, ...college.scale] })
+    expect(CollegeSchema.safeParse(withAPlus(4.33)).success).toBe(true)
+    expect(CollegeSchema.safeParse(withAPlus(4.34)).success).toBe(false)
+  })
+
   it('parses a valid state', () => {
     expect(StateSchema.safeParse(state).success).toBe(true)
   })
