@@ -1,0 +1,62 @@
+{
+  "slug": "georgia",
+  "name": "Georgia",
+  "abbr": "GA",
+  "sources": [
+    {
+      "label": "Ga. Comp. R. & Regs. 160-4-2-.49 — High School Graduation Requirements (9th grade 2023-24 and later)",
+      "url": "https://rules.sos.ga.gov/gac/160-4-2-.49"
+    }
+  ],
+  "lastChecked": "2026-11-04",
+  "appliesToClassOf": "2027 and later",
+  "plans": [
+    {
+      "name": "High School Diploma",
+      "totalCredits": 23,
+      "subjects": [
+        {
+          "key": "english",
+          "label": "English Language Arts",
+          "credits": 4,
+          "notes": "Literature & Composition I and II plus two more ELA core courses"
+        },
+        {
+          "key": "math",
+          "label": "Mathematics",
+          "credits": 4,
+          "notes": "Algebra, Geometry, and Advanced Algebra (Concepts & Connections) plus one more math core course"
+        },
+        {
+          "key": "science",
+          "label": "Science",
+          "credits": 4,
+          "notes": "Biology; Physical Science or Physics; Chemistry, Earth Systems, or Environmental Science; and a 4th science. The 4th science can also count as an elective."
+        },
+        {
+          "key": "social-studies",
+          "label": "Social Studies",
+          "credits": 3,
+          "notes": "U.S. History, World History, half a unit of American Government/Civics, and half a unit of Personal Finance and Economics"
+        },
+        {
+          "key": "ctae-world-language-fine-arts",
+          "label": "CTAE, World Languages, and/or Fine Arts",
+          "credits": 3,
+          "notes": "Any mix of career-tech, world language, or fine arts. Students headed to a University System of Georgia school need two units of the same world language."
+        },
+        {
+          "key": "health",
+          "label": "Health and Physical Education",
+          "credits": 1,
+          "notes": "Health and Personal Fitness combined, or half a unit of each; 3 units of JROTC can count if the district approves"
+        }
+      ],
+      "notes": "Includes 4 elective units. Credits are called units, and a course needs a final grade of 70 or higher to earn one. Georgia also has an Accelerated Career Diploma and a Work-Based Learning Diploma, earned through dual enrollment under a separate State Board rule (160-4-2-.34); they are not shown here."
+    }
+  ],
+  "otherRequirements": [
+    "Meet the state testing requirements set in State Board of Education Rule 160-3-1-.07"
+  ],
+  "districtNote": "These are Georgia's state minimums. Local boards of education run the high school program and may require more, so check your district's graduation requirements."
+}

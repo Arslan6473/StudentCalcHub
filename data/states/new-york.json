@@ -1,0 +1,177 @@
+{
+  "slug": "new-york",
+  "name": "New York",
+  "abbr": "NY",
+  "sources": [
+    {
+      "label": "NYSED — Graduation Requirements (credit and assessment requirements)",
+      "url": "https://www.nysed.gov/standards-instruction/graduation-requirements"
+    },
+    {
+      "label": "NYSED — NY Inspires memo: Sunsetting Diploma Assessment Requirements and Moving to One Diploma (Sept. 28, 2026)",
+      "url": "https://www.nysed.gov/sites/default/files/programs/ny-inspires/ny-inspires-transformations-sunsetting-diploma-assessment-requirements-and-moving-to-one-diploma-092926.pdf"
+    }
+  ],
+  "lastChecked": "2026-11-04",
+  "appliesToClassOf": "2027 and later",
+  "plans": [
+    {
+      "name": "Regents Diploma (graduating before January 2028)",
+      "totalCredits": 22,
+      "subjects": [
+        {
+          "key": "english",
+          "label": "English",
+          "credits": 4
+        },
+        {
+          "key": "social-studies",
+          "label": "Social Studies",
+          "credits": 4,
+          "notes": "U.S. History 1, Global History and Geography 2, Participation in Government 0.5, Economics 0.5"
+        },
+        {
+          "key": "math",
+          "label": "Mathematics",
+          "credits": 3
+        },
+        {
+          "key": "science",
+          "label": "Science",
+          "credits": 3,
+          "notes": "Life Science 1, Physical Science 1, and 1 more in either"
+        },
+        {
+          "key": "world-language",
+          "label": "World Languages",
+          "credits": 1,
+          "notes": "A student's IEP may excuse this credit; they still need 22 credits."
+        },
+        {
+          "key": "fine-arts",
+          "label": "The Arts",
+          "credits": 1,
+          "notes": "Dance, media arts, music, theater, or visual arts"
+        },
+        {
+          "key": "pe",
+          "label": "Physical Education",
+          "credits": 2,
+          "notes": "Take PE every semester; each semester earns 1/4 credit."
+        },
+        {
+          "key": "health",
+          "label": "Health",
+          "credits": 0.5
+        }
+      ],
+      "notes": "Includes 3.5 elective credits. You must also pass the 4+1 exams: one Regents exam (or approved alternative) each in English language arts, math, science, and social studies, plus one pathway. Eligible students may use appeals, safety nets, or superintendent determination."
+    },
+    {
+      "name": "Regents Diploma with Advanced Designation (graduating before January 2028)",
+      "totalCredits": 22,
+      "subjects": [
+        {
+          "key": "english",
+          "label": "English",
+          "credits": 4
+        },
+        {
+          "key": "social-studies",
+          "label": "Social Studies",
+          "credits": 4,
+          "notes": "U.S. History 1, Global History and Geography 2, Participation in Government 0.5, Economics 0.5"
+        },
+        {
+          "key": "math",
+          "label": "Mathematics",
+          "credits": 3
+        },
+        {
+          "key": "science",
+          "label": "Science",
+          "credits": 3,
+          "notes": "Life Science 1, Physical Science 1, and 1 more in either"
+        },
+        {
+          "key": "world-language",
+          "label": "World Languages",
+          "credits": 1,
+          "notes": "Or 3 credits total plus the Checkpoint B exam if you use world languages as your sequence"
+        },
+        {
+          "key": "fine-arts",
+          "label": "The Arts",
+          "credits": 1,
+          "notes": "Dance, media arts, music, theater, or visual arts"
+        },
+        {
+          "key": "pe",
+          "label": "Physical Education",
+          "credits": 2,
+          "notes": "Take PE every semester; each semester earns 1/4 credit."
+        },
+        {
+          "key": "health",
+          "label": "Health",
+          "credits": 0.5
+        }
+      ],
+      "notes": "Same 22 credits as the Regents Diploma (3.5 electives). Exams: English language arts, three math, one life science, one physical science, and one social studies Regents exam (or approved alternatives), plus one pathway. You must also finish one sequence: 3 total world language credits plus the local Checkpoint B exam, a 5-unit arts sequence, or a 5-unit CTE sequence."
+    },
+    {
+      "name": "New York State Diploma (graduating January 2028 or later)",
+      "totalCredits": 22,
+      "subjects": [
+        {
+          "key": "english",
+          "label": "English",
+          "credits": 4
+        },
+        {
+          "key": "social-studies",
+          "label": "Social Studies",
+          "credits": 4,
+          "notes": "U.S. History 1, Global History and Geography 2, Participation in Government 0.5, Economics 0.5"
+        },
+        {
+          "key": "math",
+          "label": "Mathematics",
+          "credits": 3
+        },
+        {
+          "key": "science",
+          "label": "Science",
+          "credits": 3,
+          "notes": "Life Science 1, Physical Science 1, and 1 more in either"
+        },
+        {
+          "key": "world-language",
+          "label": "World Languages",
+          "credits": 1
+        },
+        {
+          "key": "fine-arts",
+          "label": "The Arts",
+          "credits": 1
+        },
+        {
+          "key": "pe",
+          "label": "Physical Education",
+          "credits": 2
+        },
+        {
+          "key": "health",
+          "label": "Health",
+          "credits": 0.5
+        }
+      ],
+      "notes": "Starting in 2027-28, New York replaces its Local, Regents, and Advanced Designation diplomas with one diploma. Students graduating in January 2028 or later do not have to pass the 4+1 Regents exams. NYSED says the current 22-credit rules stay in place for everyone now in high school until new competency-based rules arrive with full rollout in 2029-30."
+    }
+  ],
+  "otherRequirements": [
+    "Graduating before January 2028: pass the required Regents exams (or approved alternatives) for your diploma type, plus one pathway",
+    "Graduating January 2028 or later: Regents exams are still given but passing them is no longer a diploma requirement"
+  ],
+  "districtNote": "NYSED says schools and districts may add diploma requirements on top of the state minimum, so check your school's own rules."
+}

@@ -1,0 +1,163 @@
+{
+  "slug": "texas",
+  "name": "Texas",
+  "abbr": "TX",
+  "sources": [
+    {
+      "label": "TEA — 19 TAC Chapter 74, Subchapter B: Graduation Requirements (August 2026 update)",
+      "url": "https://tea.texas.gov/laws-and-rules/sboe-rules-tac/sboe-tac-currently-effect/ch074b.pdf"
+    },
+    {
+      "label": "TEA — High School Graduation Requirements",
+      "url": "https://tea.texas.gov/student-readiness-and-high-school/high-school-graduation-requirements"
+    }
+  ],
+  "lastChecked": "2026-11-04",
+  "appliesToClassOf": "2030 and later",
+  "plans": [
+    {
+      "name": "Foundation High School Program",
+      "totalCredits": 22,
+      "subjects": [
+        {
+          "key": "english",
+          "label": "English Language Arts",
+          "credits": 4,
+          "notes": "English I, II, and III plus one more English course"
+        },
+        {
+          "key": "math",
+          "label": "Mathematics",
+          "credits": 3,
+          "notes": "Must include Algebra I and Geometry"
+        },
+        {
+          "key": "science",
+          "label": "Science",
+          "credits": 3,
+          "notes": "Must include Biology and one lab course such as IPC, Chemistry, or Physics"
+        },
+        {
+          "key": "social-studies",
+          "label": "Social Studies",
+          "credits": 3,
+          "notes": "U.S. History, half a credit of U.S. Government, half a credit of personal financial literacy, and one of World History, World Geography, or Foundations of Economics. Students who started 9th grade before 2026-27 take a half credit of economics and World History or World Geography instead."
+        },
+        {
+          "key": "world-language",
+          "label": "Languages Other Than English",
+          "credits": 2,
+          "notes": "Two credits in computer programming languages can also count"
+        },
+        {
+          "key": "pe",
+          "label": "Physical Education",
+          "credits": 1
+        },
+        {
+          "key": "fine-arts",
+          "label": "Fine Arts",
+          "credits": 1
+        }
+      ],
+      "notes": "Includes 5 elective credits. Students are expected to also earn an endorsement; graduating with the Foundation program alone needs a parent's written permission after the student's sophomore year. Students who started 9th grade between 2014-15 and 2025-26 need the same credit totals; only their social studies course choices differ."
+    },
+    {
+      "name": "Foundation + Endorsement",
+      "totalCredits": 26,
+      "subjects": [
+        {
+          "key": "english",
+          "label": "English Language Arts",
+          "credits": 4,
+          "notes": "English I, II, and III plus one more English course"
+        },
+        {
+          "key": "math",
+          "label": "Mathematics",
+          "credits": 4,
+          "notes": "Algebra I, Geometry, and two more math credits"
+        },
+        {
+          "key": "science",
+          "label": "Science",
+          "credits": 4,
+          "notes": "Biology, a lab course, and two more science credits"
+        },
+        {
+          "key": "social-studies",
+          "label": "Social Studies",
+          "credits": 3,
+          "notes": "Same as the Foundation program"
+        },
+        {
+          "key": "world-language",
+          "label": "Languages Other Than English",
+          "credits": 2
+        },
+        {
+          "key": "pe",
+          "label": "Physical Education",
+          "credits": 1
+        },
+        {
+          "key": "fine-arts",
+          "label": "Fine Arts",
+          "credits": 1
+        }
+      ],
+      "notes": "Adds a 4th math credit, a 4th science credit, and 2 more electives to the Foundation program (7 electives total). Students finish the course pattern for at least one endorsement: STEM, Business and Industry, Public Services, Arts and Humanities, or Multidisciplinary Studies. Endorsement courses usually come from the elective credits."
+    },
+    {
+      "name": "Distinguished Level of Achievement",
+      "totalCredits": 26,
+      "subjects": [
+        {
+          "key": "english",
+          "label": "English Language Arts",
+          "credits": 4,
+          "notes": "English I, II, and III plus one more English course"
+        },
+        {
+          "key": "math",
+          "label": "Mathematics",
+          "credits": 4,
+          "notes": "Must include Algebra I, Geometry, and Algebra II"
+        },
+        {
+          "key": "science",
+          "label": "Science",
+          "credits": 4
+        },
+        {
+          "key": "social-studies",
+          "label": "Social Studies",
+          "credits": 3
+        },
+        {
+          "key": "world-language",
+          "label": "Languages Other Than English",
+          "credits": 2
+        },
+        {
+          "key": "pe",
+          "label": "Physical Education",
+          "credits": 1
+        },
+        {
+          "key": "fine-arts",
+          "label": "Fine Arts",
+          "credits": 1
+        }
+      ],
+      "notes": "Same as Foundation + Endorsement, but the four math credits must include Algebra II. At least one endorsement is required."
+    }
+  ],
+  "otherRequirements": [
+    "Pass five state end-of-course exams: Algebra I, English I, English II, Biology, and U.S. History",
+    "Submit the FAFSA or TASFA financial aid application before graduating, unless a parent, an adult student, or a school counselor signs an opt-out",
+    "Starting with students enrolled in 2026-27, choose whether to share records for the state's direct college admission program (or turn in an opt-out form)",
+    "Show speaking and communication skills, as judged by the school district"
+  ],
+  "districtNote": "These are the Texas state minimums. Districts may require more, and each district decides which endorsement course sequences and advanced courses it offers, so check your district's graduation plan."
+}

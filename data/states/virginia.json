@@ -1,0 +1,122 @@
+{
+  "slug": "virginia",
+  "name": "Virginia",
+  "abbr": "VA",
+  "sources": [
+    {
+      "label": "Virginia Administrative Code — 8VAC20-132-51 (Graduation requirements, 9th graders 2018–2019 and after)",
+      "url": "https://law.lis.virginia.gov/admincode/title8/agency20/chapter132/section51/"
+    }
+  ],
+  "lastChecked": "2026-11-04",
+  "appliesToClassOf": "2022 and later",
+  "plans": [
+    {
+      "name": "Standard Diploma",
+      "totalCredits": 22,
+      "subjects": [
+        {
+          "key": "english",
+          "label": "English (reading and writing)",
+          "credits": 4,
+          "notes": "2 must be verified credits (passed the end-of-course test or an approved substitute)."
+        },
+        {
+          "key": "math",
+          "label": "Mathematics",
+          "credits": 3,
+          "notes": "At least two different courses from Algebra I, Geometry, Algebra Functions and Data Analysis, Algebra II, or other approved math. 1 verified credit."
+        },
+        {
+          "key": "science",
+          "label": "Laboratory Science",
+          "credits": 3,
+          "notes": "Courses from at least two science fields (earth science, biology, chemistry, physics). 1 verified credit."
+        },
+        {
+          "key": "social-studies",
+          "label": "History and Social Science",
+          "credits": 3,
+          "notes": "Virginia and U.S. History, Virginia and U.S. Government, and world history or geography. 1 verified credit."
+        },
+        {
+          "key": "pe",
+          "label": "Health and Physical Education",
+          "credits": 2
+        },
+        {
+          "key": "world-language-fine-arts-cte",
+          "label": "World Language, Fine Arts, or Career and Technical Education",
+          "credits": 2,
+          "notes": "At least 1 of these must be fine or performing arts or CTE."
+        },
+        {
+          "key": "financial-literacy",
+          "label": "Economics and Personal Finance",
+          "credits": 1
+        }
+      ],
+      "notes": "Also needs 4 elective credits, including two sequential electives. In total you need 5 verified credits, and only one of them can be a locally awarded verified credit."
+    },
+    {
+      "name": "Advanced Studies Diploma",
+      "totalCredits": 26,
+      "subjects": [
+        {
+          "key": "english",
+          "label": "English (reading and writing)",
+          "credits": 4,
+          "notes": "2 verified credits."
+        },
+        {
+          "key": "math",
+          "label": "Mathematics",
+          "credits": 4,
+          "notes": "At least three different courses from Algebra I, Geometry, Algebra II, or higher math. 1 verified credit."
+        },
+        {
+          "key": "science",
+          "label": "Laboratory Science",
+          "credits": 4,
+          "notes": "Courses from at least three science fields (earth science, biology, chemistry, physics). 1 verified credit."
+        },
+        {
+          "key": "social-studies",
+          "label": "History and Social Science",
+          "credits": 4,
+          "notes": "Virginia and U.S. History, Virginia and U.S. Government, and two world history or geography courses. 1 verified credit."
+        },
+        {
+          "key": "world-language",
+          "label": "World Language",
+          "credits": 3,
+          "notes": "Three years of one language or two years each of two languages."
+        },
+        {
+          "key": "pe",
+          "label": "Health and Physical Education",
+          "credits": 2
+        },
+        {
+          "key": "fine-arts-or-cte",
+          "label": "Fine Arts or Career and Technical Education",
+          "credits": 1
+        },
+        {
+          "key": "financial-literacy",
+          "label": "Economics and Personal Finance",
+          "credits": 1
+        }
+      ],
+      "notes": "Also needs 3 elective credits, including two sequential electives. In total you need 5 verified credits, and only one of them can be a locally awarded verified credit."
+    }
+  ],
+  "otherRequirements": [
+    "Earn 5 verified credits by passing end-of-course tests or approved substitute tests",
+    "Take an AP, honors, IB, or dual enrollment course, complete a high-quality work-based learning experience, or earn a state-approved CTE credential",
+    "Complete one virtual (online) course, which can be non-credit",
+    "Get trained in emergency first aid, CPR, and AED use (waivers exist for some students)",
+    "Show the \"five Cs\": critical thinking, creative thinking, collaboration, communication, and citizenship"
+  ],
+  "districtNote": "In Virginia, a local school board can add graduation requirements beyond these state minimums, but only if the State Board of Education approves them. Check your school division's requirements."
+}

@@ -1,0 +1,76 @@
+{
+  "slug": "south-carolina",
+  "name": "South Carolina",
+  "abbr": "SC",
+  "sources": [
+    {
+      "label": "S.C. Code of Regulations, Chapter 43, R. 43-234 (Graduation Requirements)",
+      "url": "https://www.scstatehouse.gov/coderegs/Chapter%2043.pdf"
+    },
+    {
+      "label": "S.C. State Register Doc. No. 5130 — financial literacy amendment to R. 43-234 (effective May 2023)",
+      "url": "https://www.scstatehouse.gov/regs/5130.docx"
+    }
+  ],
+  "lastChecked": "2026-11-04",
+  "appliesToClassOf": "2027 and later",
+  "plans": [
+    {
+      "name": "South Carolina High School Diploma",
+      "totalCredits": 24,
+      "subjects": [
+        {
+          "key": "english",
+          "label": "English Language Arts",
+          "credits": 4
+        },
+        {
+          "key": "math",
+          "label": "Mathematics",
+          "credits": 4
+        },
+        {
+          "key": "science",
+          "label": "Science",
+          "credits": 3
+        },
+        {
+          "key": "social-studies",
+          "label": "Social Studies",
+          "credits": 3,
+          "notes": "U.S. History and Constitution 1, Economics 0.5, U.S. Government 0.5, and 1 more social studies credit"
+        },
+        {
+          "key": "pe",
+          "label": "Physical Education or JROTC",
+          "credits": 1
+        },
+        {
+          "key": "computer-science",
+          "label": "Computer Science",
+          "credits": 1
+        },
+        {
+          "key": "world-language",
+          "label": "World Language or Career and Technology Education",
+          "credits": 1,
+          "notes": "Either a world language or a CTE course counts."
+        },
+        {
+          "key": "financial-literacy",
+          "label": "Financial Literacy",
+          "credits": 0.5,
+          "notes": "A full credit in the CTE Personal Finance course also meets this."
+        }
+      ],
+      "notes": "Includes 6.5 elective credits. Students may also earn optional endorsements in a career pathway, but these are not needed to graduate."
+    }
+  ],
+  "otherRequirements": [
+    "Pass a classroom exam on the U.S. Constitution, the Declaration of Independence, the Federalist Papers, and American institutions",
+    "Take the civics test made from the 100 U.S. citizenship test questions, as part of the U.S. Government course",
+    "Pass a high school science course that has a state end-of-course exam",
+    "Be enrolled for at least one semester right before you graduate (summer school does not count)"
+  ],
+  "districtNote": "These are South Carolina's statewide minimums; your school district may require more credits or courses."
+}

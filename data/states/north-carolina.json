@@ -1,0 +1,67 @@
+{
+  "slug": "north-carolina",
+  "name": "North Carolina",
+  "abbr": "NC",
+  "sources": [
+    {
+      "label": "NC DPI — High School Graduation Requirements",
+      "url": "https://www.dpi.nc.gov/districts-schools/high-school-graduation-requirements"
+    }
+  ],
+  "lastChecked": "2026-11-04",
+  "appliesToClassOf": "2030 and later",
+  "plans": [
+    {
+      "name": "Future-Ready Course of Study",
+      "totalCredits": 22,
+      "subjects": [
+        {
+          "key": "english",
+          "label": "English",
+          "credits": 4,
+          "notes": "English I, II, III, and IV in order"
+        },
+        {
+          "key": "math",
+          "label": "Mathematics",
+          "credits": 4,
+          "notes": "NC Math 1, 2, and 3, plus a fourth course that fits your plans after high school"
+        },
+        {
+          "key": "science",
+          "label": "Science",
+          "credits": 3,
+          "notes": "A physical science, Biology, and an earth/environmental science"
+        },
+        {
+          "key": "social-studies",
+          "label": "Social Studies",
+          "credits": 4,
+          "notes": "Founding Principles/Civic Literacy, Economics and Personal Finance, American History, and World History"
+        },
+        {
+          "key": "health",
+          "label": "Health and Physical Education",
+          "credits": 1
+        },
+        {
+          "key": "computer-science",
+          "label": "Computer Science",
+          "credits": 1,
+          "notes": "New for students entering grade 9 in 2026-27. Students who enroll after grade 11, or whose IEP prevents it, take one more elective instead."
+        },
+        {
+          "key": "cte-arts-world-language",
+          "label": "CTE, Arts, or World Language",
+          "credits": 2
+        }
+      ],
+      "notes": "Includes 3 more elective credits from any subject. Students who entered grade 9 from 2021-22 through 2025-26 follow the same plan without the computer science credit and have 4 open elective credits instead of 3."
+    }
+  ],
+  "otherRequirements": [
+    "Complete CPR instruction as part of the Healthful Living standards",
+    "Take at least one arts education course sometime in grades 6–12"
+  ],
+  "districtNote": "This is North Carolina's state minimum; local school districts can set graduation requirements above it."
+}
