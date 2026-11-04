@@ -1,0 +1,45 @@
+## How it works
+
+Significant figures ("sig figs") are the digits in a measurement that carry real information. The
+calculator applies the standard rules from general chemistry:
+
+- **Nonzero digits** are always significant: 4.56 has 3.
+- **Zeros between nonzero digits** are significant: 305 has 3.
+- **Leading zeros** are never significant: 0.00450 starts counting at the 4.
+- **Trailing zeros after a decimal point** are significant: 100.0 has 4, and 0.00450 has 3.
+- **Trailing zeros with no decimal point** are ambiguous: 1500 is counted as 2. Write 1500. or
+  1.500 × 10^3 to show that all four were measured.
+
+For scientific notation, only the number before "× 10" counts: 1.50 × 10^3 has 3 sig figs.
+
+When you combine measurements, the answer can't be more precise than your least precise input:
+
+- **Adding or subtracting:** keep the fewest *decimal places*.
+- **Multiplying or dividing:** keep the fewest *significant figures*.
+
+## Worked example
+
+You add a 12.11 g sample to 0.3 g of salt.
+
+1. 12.11 + 0.3 = 12.41 on the calculator.
+2. 12.11 goes to the hundredths place, but 0.3 only goes to the tenths place.
+3. Round to the tenths: the answer is **12.4 g**.
+
+Now find the area of a 2.5 cm × 3.47 cm rectangle. 2.5 × 3.47 = 8.675, and 2.5 has only 2 sig figs, so
+the answer is **8.7 cm²**.
+
+## When to use this
+
+- To check how many significant figures a measurement in your lab notebook has.
+- To round a calculator answer before you write it in a lab report.
+- To combine two measurements and keep the right precision.
+- To round a [percent error](/chemistry/percent-error-calculator) result to match your data.
+
+## Common mistakes
+
+- **Counting leading zeros.** 0.0045 has 2 significant figures, not 5.
+- **Dropping significant trailing zeros.** If your balance read 2.00 g, write 2.00, not 2. The zeros
+  show the precision of the instrument.
+- **Mixing up the two rules.** Addition uses decimal places; multiplication uses sig figs.
+- **Rounding at every step.** In a multi-step problem, keep extra digits until the end and round once.
+- **Limiting by exact numbers.** Counted values and defined conversions don't limit your sig figs.

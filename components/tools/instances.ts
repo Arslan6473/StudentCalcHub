@@ -2,9 +2,13 @@ import type { ComponentType } from 'react'
 
 import type { ToolComponentSlug } from '@/components/tools/instance-slugs'
 import { GradeConverterTool } from '@/components/tools/grade-converter/grade-converter-tool'
+import { PercentErrorCalculatorTool } from '@/components/tools/percent-error-calculator/percent-error-calculator-tool'
+import { SigFigCalculatorTool } from '@/components/tools/sig-fig-calculator/sig-fig-calculator-tool'
 
 export const TOOL_COMPONENTS: Record<ToolComponentSlug, ComponentType> = {
   'grade-converter': GradeConverterTool,
+  'percent-error-calculator': PercentErrorCalculatorTool,
+  'sig-fig-calculator': SigFigCalculatorTool,
 }
 
 /** Same map, indexable by any registry slug (TOOL_COMPONENTS is keyed by the literal slug union). */
