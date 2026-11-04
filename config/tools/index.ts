@@ -6,6 +6,7 @@ import { molarityCalculator } from '@/config/tools/molarity-calculator'
 import { percentErrorCalculator } from '@/config/tools/percent-error-calculator'
 import { sigFigCalculator } from '@/config/tools/sig-fig-calculator'
 import { whichStatisticalTest } from '@/config/tools/which-statistical-test'
+import { sampleSizeCalculator } from '@/config/tools/sample-size-calculator'
 
 /** Single source of truth for tool routes, hub listings, sitemap and related links. */
 export const TOOLS: ToolConfig[] = [
@@ -15,6 +16,7 @@ export const TOOLS: ToolConfig[] = [
   gramsToMolesCalculator,
   molarityCalculator,
   whichStatisticalTest,
+  sampleSizeCalculator,
 ]
 
 export function getTool(hub: HubSlug, slug: string): ToolConfig | undefined {

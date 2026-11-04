@@ -1,0 +1,58 @@
+## How it works
+
+A sample size calculation answers one question: how many responses do you need so that your estimate is
+within a chosen margin of error, at a chosen confidence level?
+
+**For a proportion** (a survey question with a yes/no or percentage answer):
+
+**n₀ = z² × p(1 − p) ÷ E²**
+
+**For a mean** (an average of a measurement, such as test scores or reaction times):
+
+**n₀ = (z × σ ÷ E)²**
+
+- **z** comes from the confidence level: 1.645 for 90%, 1.96 for 95%, 2.576 for 99%.
+- **E** is the margin of error. For a proportion, write it as a decimal (5% = 0.05).
+- **p** is the proportion you expect. **σ** is the standard deviation you expect.
+
+If you are sampling from a small, known group, the **finite population correction** lowers the number:
+n = n₀ ÷ (1 + (n₀ − 1) ÷ N), where N is the population size. Always round the final answer **up**.
+
+### Why p = 0.5 is the safe default
+
+The term p(1 − p) is 0.25 when p = 0.5, and smaller for any other value: 0.21 at p = 0.3, 0.09 at p = 0.1.
+So if you have no earlier estimate, using 50% gives the largest sample size the formula can produce. Whatever
+the true proportion is, your margin of error will be no wider than the one you asked for.
+
+## Worked example
+
+Your student council wants to survey a school of **1,200 students** at **95% confidence** with a **±5%**
+margin of error. Nobody knows what share will answer yes, so use p = 0.5.
+
+1. z for 95% confidence is 1.96.
+2. n₀ = 1.96² × 0.5 × 0.5 ÷ 0.05² = 384.16
+3. The school is small, so correct for it: 384.16 ÷ (1 + 383.16 ÷ 1,200) = 291.18
+4. Round up: you need **292 responses**.
+
+Without the population correction you would need 385. For a mean instead: at 95% confidence, a margin of
+±2 points and a standard deviation of 10 points, n₀ = (1.96 × 10 ÷ 2)² = 96.04, so you need **97**.
+
+Not sure which analysis you will run once the data is in? Use the
+[statistical test chooser](/statistics/which-statistical-test).
+
+## When to use this
+
+- To plan a survey for a class project, AP Statistics assignment or student organization.
+- To justify your sample size in the methods section of a research proposal or capstone.
+- To check whether a survey you have already run had enough responses for the margin you report.
+
+## Common mistakes
+
+- **Entering the margin as a whole number in the formula.** 5% is 0.05, not 5. The calculator converts it for you.
+- **Rounding down.** 384.16 means 385 people; 384 would give a margin slightly wider than you asked for.
+- **Counting people you asked, not people who answered.** If you expect a 40% response rate, invite about
+  2.5 times the number shown.
+- **Using the population correction for a huge population.** It makes almost no difference, and an
+  overestimate of N is harmless; leave it blank if unsure.
+- **Assuming a big sample removes bias.** The formula covers random error only. A convenience sample of your
+  friends stays biased however many you ask.

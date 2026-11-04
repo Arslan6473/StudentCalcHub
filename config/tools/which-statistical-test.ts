@@ -34,7 +34,7 @@ export const whichStatisticalTest: ToolConfig = {
         'No. It helps you choose the test. Run the test in your statistics software or calculator, and check the listed assumptions against your data first.',
     },
   ],
-  related: [],
+  related: ['sample-size-calculator'],
   sources: [
     { label: 'UCLA OARC — Choosing the Correct Statistical Test', url: 'https://stats.oarc.ucla.edu/other/mult-pkg/whatstat/' },
     { label: 'OpenStax Introductory Statistics 2e — 11.3 Test of Independence', url: 'https://openstax.org/books/introductory-statistics-2e/pages/11-3-test-of-independence' },

@@ -10,6 +10,7 @@ export const TOOL_COMPONENT_SLUGS = [
   'grams-to-moles-calculator',
   'molarity-calculator',
   'which-statistical-test',
+  'sample-size-calculator',
 ] as const
 
 export type ToolComponentSlug = (typeof TOOL_COMPONENT_SLUGS)[number]

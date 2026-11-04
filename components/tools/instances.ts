@@ -7,6 +7,7 @@ import { MolarityCalculatorTool } from '@/components/tools/molarity-calculator/m
 import { PercentErrorCalculatorTool } from '@/components/tools/percent-error-calculator/percent-error-calculator-tool'
 import { SigFigCalculatorTool } from '@/components/tools/sig-fig-calculator/sig-fig-calculator-tool'
 import { WhichStatisticalTestTool } from '@/components/tools/which-statistical-test/which-statistical-test-tool'
+import { SampleSizeCalculatorTool } from '@/components/tools/sample-size-calculator/sample-size-calculator-tool'
 
 export const TOOL_COMPONENTS: Record<ToolComponentSlug, ComponentType> = {
   'grade-converter': GradeConverterTool,
@@ -15,6 +16,7 @@ export const TOOL_COMPONENTS: Record<ToolComponentSlug, ComponentType> = {
   'grams-to-moles-calculator': GramsToMolesCalculatorTool,
   'molarity-calculator': MolarityCalculatorTool,
   'which-statistical-test': WhichStatisticalTestTool,
+  'sample-size-calculator': SampleSizeCalculatorTool,
 }
 
 /** Same map, indexable by any registry slug (TOOL_COMPONENTS is keyed by the literal slug union). */
