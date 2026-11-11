@@ -2,7 +2,7 @@ export const SITE = {
   name: 'StudentCalcHub',
   tagline: 'Free calculators that show the working.',
   description:
-    'Free GPA, chemistry, statistics and test-score calculators for US students. Every tool shows the steps so you can learn and check your own work.',
+    'Free GPA, grade conversion, chemistry, statistics and test-score calculators for students worldwide. Every tool shows the steps so you can learn and check your own work.',
   /** Used to build absolute URLs for metadata, sitemap, and JSON-LD. Override with NEXT_PUBLIC_SITE_URL in production. */
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.studentcalchub.com',
   disclaimerShort:

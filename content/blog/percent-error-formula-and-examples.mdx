@@ -1,0 +1,130 @@
+---
+title: 'Percent Error: Formula, Worked Examples and Common Mistakes'
+description: 'The percent error formula with worked chemistry and physics examples, signed vs absolute error, sig-fig rounding and the mistakes that cost marks.'
+date: '2026-11-11'
+updated: '2026-11-11'
+category: 'chemistry'
+tags: ['percent error', 'lab reports', 'significant figures']
+relatedTools: ['/chemistry/percent-error-calculator', '/chemistry/sig-fig-calculator']
+---
+
+Percent error tells you how far a measured value is from the accepted value, as a percentage of the accepted value. The formula is **|experimental − accepted| ÷ accepted × 100**. A smaller percent error means your measurement was closer to the accepted value.
+
+## The percent error formula
+
+**Percent error = |experimental value − accepted value| ÷ accepted value × 100%**
+
+- **Experimental value**: what you measured or calculated in the lab. Also called the measured or observed value.
+- **Accepted value**: the reference value from your textbook, a data table or your teacher. Also called the true, theoretical or literature value.
+- **The vertical bars** mean absolute value: drop any minus sign.
+
+The steps are always the same:
+
+1. Subtract the accepted value from the experimental value.
+2. Take the absolute value (unless your class keeps the sign).
+3. Divide by the accepted value.
+4. Multiply by 100 and add a % sign.
+5. Round to the right number of [significant figures](/chemistry/sig-fig-calculator).
+
+## Worked examples
+
+### Example 1: density of aluminium
+
+You measure the density of an aluminium block as **2.45 g/cm³**. The accepted value is **2.70 g/cm³**.
+
+1. 2.45 − 2.70 = −0.25
+2. |−0.25| = 0.25
+3. 0.25 ÷ 2.70 = 0.09259
+4. 0.09259 × 100 = 9.259%
+
+Many textbooks show this as **9.26%**. If your class applies strict significant figure rules, the difference 0.25 has only 2 sig figs (subtraction keeps two decimal places), so the answer is **9.3%**. Follow whichever your teacher or lab manual uses.
+
+### Example 2: acceleration due to gravity
+
+A pendulum experiment gives **g = 9.62 m/s²**. The accepted value is **9.81 m/s²**.
+
+1. 9.62 − 9.81 = −0.19
+2. |−0.19| = 0.19
+3. 0.19 ÷ 9.81 = 0.019368
+4. 0.019368 × 100 = 1.9368%
+
+The difference 0.19 has 2 sig figs, so report **1.9%**.
+
+### Example 3: boiling point of water
+
+You measure the boiling point of water as **98.6 °C**. Your lab manual gives the accepted value as **100.0 °C**.
+
+1. 98.6 − 100.0 = −1.4
+2. |−1.4| = 1.4
+3. 1.4 ÷ 100.0 = 0.014
+4. 0.014 × 100 = **1.4%**
+
+Now try the same measurement in kelvin. 98.6 °C is 371.75 K and 100.0 °C is 373.15 K. The difference is still 1.40, but 1.40 ÷ 373.15 × 100 = **0.375%**.
+
+Same thermometer, same reading, different percent error. Percent error depends on where zero sits on the scale. For temperatures, use whichever unit your lab manual asks for, and say which one you used.
+
+### Example 4: working backwards
+
+Your teacher says a result within 5% of the accepted density, 2.70 g/cm³, earns full marks. What range of measurements is that?
+
+5% of 2.70 = 0.05 × 2.70 = 0.135
+
+So any value from 2.70 − 0.135 = **2.565 g/cm³** to 2.70 + 0.135 = **2.835 g/cm³** is within 5%.
+
+## Signed vs absolute percent error
+
+The standard formula uses the absolute value, so percent error is never negative. Some teachers ask you to keep the sign because it shows the direction of your error:
+
+| Your result | Signed percent error | Meaning |
+|---|---|---|
+| Experimental higher than accepted | Positive, e.g. +4.1% | You measured too high |
+| Experimental lower than accepted | Negative, e.g. −9.3% | You measured too low |
+| Experimental = accepted | 0% | Perfect agreement |
+
+The sign is useful in your error analysis. For example, if you weigh a product after drying it, a mass that is too **high** suggests the sample wasn't fully dry. A mass that is too **low** suggests some product was lost during transfer. Thinking about the sign helps you name a believable source of error.
+
+## Rounding percent error with significant figures
+
+Percent error is a calculation, so it follows the same rules as any other:
+
+- **The subtraction step** keeps the fewest decimal places. This often costs digits. 2.81 − 2.70 = 0.11 has only 2 sig figs, even though both inputs have 3.
+- **The division step** keeps the fewest significant figures of the difference and the accepted value.
+- **The ×100 step** uses an exact number, so it never limits your sig figs.
+
+Keep all your calculator digits until the end, then round once. The [percent error calculator](/chemistry/percent-error-calculator) can round automatically and show each step.
+
+## Percent error vs similar formulas
+
+Students often mix these up. They answer different questions.
+
+| Formula | Compares | Calculation |
+|---|---|---|
+| Percent error | Your value vs an accepted value | \|exp − acc\| ÷ acc × 100 |
+| Percent difference | Two measured values, neither of them "correct" | \|a − b\| ÷ ((a + b) ÷ 2) × 100 |
+| Percent yield | Product you made vs the most you could make | actual ÷ theoretical × 100 |
+| Percent change | A new value vs an old value | (new − old) ÷ old × 100 |
+
+**Example of percent difference:** two trials give 2.81 and 2.70 g/cm³. The difference is 0.11, the average is 2.755, and 0.11 ÷ 2.755 × 100 = 3.99%, which rounds to **4.0%** with 2 sig figs. Use percent difference when you have no accepted value to compare with.
+
+## What counts as a "good" percent error?
+
+There is no universal cut-off. A 5% error might be excellent for a quick high school density lab and poor for a careful titration. Your lab manual or teacher sets the standard for each experiment.
+
+What a large percent error tells you is that something affected the result: a measuring instrument, a technique, or an assumption in the method. It's worth naming the most likely cause in your report rather than just stating the number.
+
+Percent error measures **accuracy** (closeness to the accepted value). It does not tell you about **precision** (how close your repeated trials are to each other). Three trials of 2.45, 2.46 and 2.45 g/cm³ are very precise but still about 9% off.
+
+## Common mistakes
+
+- **Dividing by your own value.** Always divide by the accepted value. 0.25 ÷ 2.45 gives 10.2%, not 9.26%.
+- **Forgetting to multiply by 100.** 0.0926 is a fraction. 9.26% is the percent error.
+- **Rounding too early.** Rounding 0.09259 to 0.09 before multiplying gives 9%, which throws away information.
+- **Reporting too many digits.** 9.259259% suggests more precision than your measurements have.
+- **Using it when the accepted value is zero.** The formula divides by zero. This happens with temperatures in °C (such as the freezing point of water) or a voltage that should be 0 V. Report the absolute difference instead, or ask your teacher.
+- **Mixing up percent error and percent yield.** A 92% yield is a 92% recovery, not a 92% error.
+- **Keeping the sign when your class doesn't** (or dropping it when they want it). Check the lab instructions.
+
+## Sources
+
+- LibreTexts Chemistry (CK-12 Introductory Chemistry), [3.13: Percent Error](https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(CK-12)/03:_Measurements/3.13:_Percent_Error)
+- LibreTexts Chemistry (Tro, Introductory Chemistry), [2.04: Significant Figures in Calculations](https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Map:_Introductory_Chemistry_(Tro)/02:_Measurement_and_Problem_Solving/2.04:_Significant_Figures_in_Calculations)

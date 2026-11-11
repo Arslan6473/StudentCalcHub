@@ -3,8 +3,8 @@ import { expect, test, type Page } from '@playwright/test'
 import { LEARNING_NOTE } from '../config/site'
 import { TOOLS, toolPath } from '../config/tools'
 
-/** Vercel Web Analytics only exists on Vercel; locally its script 404s. */
-const IGNORED_CONSOLE = [/_vercel\/insights/]
+/** Vercel Web Analytics and Speed Insights only exist on Vercel; locally their scripts 404. */
+const IGNORED_CONSOLE = [/_vercel\/(insights|speed-insights)/]
 
 async function sitemapPaths(page: Page): Promise<string[]> {
   const res = await page.request.get('/sitemap.xml')

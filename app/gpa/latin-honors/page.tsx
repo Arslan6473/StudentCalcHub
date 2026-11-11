@@ -61,7 +61,7 @@ function cutoffText(c: College, key: 'cumLaude' | 'magnaCumLaude' | 'summaCumLau
 export default function Page() {
   const colleges = getColleges()
   const breadcrumbItems = [
-    { label: 'GPA & Graduation', href: '/gpa' },
+    { label: 'GPA & Grades', href: '/gpa' },
     { label: 'Latin Honors', href: PATH },
   ]
   const updated = colleges.reduce((max, c) => (c.lastChecked > max ? c.lastChecked : max), '2026-11-04')

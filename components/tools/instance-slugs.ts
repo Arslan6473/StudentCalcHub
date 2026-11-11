@@ -5,6 +5,9 @@
  */
 export const TOOL_COMPONENT_SLUGS = [
   'grade-converter',
+  'gpa-scale-converter',
+  'cgpa-to-percentage-calculator',
+  'uk-degree-classification-calculator',
   'percent-error-calculator',
   'sig-fig-calculator',
   'grams-to-moles-calculator',

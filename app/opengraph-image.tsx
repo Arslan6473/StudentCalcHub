@@ -9,6 +9,6 @@ export default function Image() {
   return renderOgImage({
     eyebrow: 'Free student calculators',
     title: 'Check your work. See every step.',
-    subtitle: 'GPA, Latin honors, chemistry, statistics and test-score tools for US students.',
+    subtitle: 'GPA, grade conversion, chemistry, statistics and test-score tools for students worldwide.',
   })
 }

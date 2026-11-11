@@ -1,11 +1,4 @@
-function formatDate(iso: string): string {
-  return new Date(`${iso}T00:00:00Z`).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-    timeZone: 'UTC',
-  })
-}
+import { formatDate } from '@/lib/format-date'
 
 /** Official sources for a page, with the date the values were last checked against them. */
 export function SourcesList({

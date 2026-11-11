@@ -50,7 +50,7 @@ export default async function Page({ params }: PageProps<'/gpa/college/[college]
   if (!college) notFound()
   const path = `/gpa/college/${college.slug}`
   const breadcrumbItems = [
-    { label: 'GPA & Graduation', href: '/gpa' },
+    { label: 'GPA & Grades', href: '/gpa' },
     { label: 'Latin Honors', href: '/gpa/latin-honors' },
     { label: college.shortName, href: path },
   ]

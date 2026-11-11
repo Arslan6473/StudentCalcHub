@@ -8,14 +8,14 @@ export interface Hub {
   href: string
 }
 
-/** Homepage and navigation order: GPA & graduation leads (highest demand, weakest competition). */
+/** Homepage and navigation order: GPA & grades leads (highest demand, weakest competition). */
 export const HUBS: Hub[] = [
   {
     slug: 'gpa',
-    name: 'GPA & Graduation',
-    shortName: 'GPA',
+    name: 'GPA & Grades',
+    shortName: 'GPA & Grades',
     summary:
-      'Convert grades, check your college’s GPA scale and Latin honors cutoffs, and count the high school credits you still need.',
+      'Convert grades between the US 4.0 scale, CGPA, UK degree classes and other international scales — plus US college GPA scales, Latin honors and graduation credits.',
     href: '/gpa',
   },
   {
@@ -31,7 +31,7 @@ export const HUBS: Hub[] = [
     name: 'Test Prep',
     shortName: 'Test Prep',
     summary:
-      'Estimate your SAT, PSAT/NMSQT and ACT scores from a practice test, including the National Merit Selection Index.',
+      'Estimate your SAT, PSAT/NMSQT and ACT scores from a practice test — whether you test in the US or at an international centre.',
     href: '/test-prep',
   },
   {
@@ -52,14 +52,14 @@ export function getHub(slug: string): Hub | undefined {
 export const HUB_EXTRA_LINKS: Record<HubSlug, { label: string; href: string; summary: string }[]> = {
   gpa: [
     {
-      label: 'Latin Honors GPA Requirements by College',
+      label: 'Latin Honors GPA Requirements by US College',
       href: '/gpa/latin-honors',
-      summary: 'Compare cum laude, magna cum laude and summa cum laude cutoffs, and check if you qualify.',
+      summary: 'Compare cum laude, magna cum laude and summa cum laude cutoffs at US colleges, and check if you qualify.',
     },
     {
-      label: 'High School Credits to Graduate by State',
+      label: 'US High School Credits to Graduate by State',
       href: '/high-school-credits',
-      summary: 'See how many credits your state requires, by subject, and how many you have left.',
+      summary: 'See how many credits your US state requires, by subject, and how many you have left.',
     },
   ],
   chemistry: [],

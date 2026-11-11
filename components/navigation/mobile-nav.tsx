@@ -4,10 +4,9 @@ import * as React from 'react'
 import Link from 'next/link'
 import { Menu, X } from 'lucide-react'
 
-import { HUBS } from '@/config/hubs'
 import { Button } from '@/components/ui/button'
 
-export function MobileNav() {
+export function MobileNav({ links }: { links: { label: string; href: string }[] }) {
   const [open, setOpen] = React.useState(false)
 
   return (
@@ -25,14 +24,14 @@ export function MobileNav() {
             </Button>
           </div>
           <nav className="flex flex-col p-4" aria-label="Mobile">
-            {HUBS.map((hub) => (
+            {links.map((link) => (
               <Link
-                key={hub.slug}
-                href={hub.href}
+                key={link.href}
+                href={link.href}
                 onClick={() => setOpen(false)}
                 className="rounded-md px-3 py-3 text-base font-medium text-ink hover:bg-surface-muted"
               >
-                {hub.name}
+                {link.label}
               </Link>
             ))}
           </nav>

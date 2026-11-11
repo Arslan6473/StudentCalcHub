@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter, JetBrains_Mono } from 'next/font/google'
 import Script from 'next/script'
 import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 import { SITE } from '@/config/site'
 import { THEME_INIT_SCRIPT, ThemeProvider } from '@/components/theme-provider'
@@ -20,10 +21,11 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
-  title: { default: `${SITE.name} — ${SITE.tagline}`, template: `%s | ${SITE.name}` },
+  title: { default: `Free Student Calculators That Show Every Step | ${SITE.name}`, template: `%s | ${SITE.name}` },
   description: SITE.description,
-  alternates: { canonical: '/' },
-  openGraph: { siteName: SITE.name, type: 'website' },
+  applicationName: SITE.name,
+  alternates: { canonical: '/', types: { 'application/rss+xml': '/blog/rss.xml' } },
+  openGraph: { siteName: SITE.name, type: 'website', locale: 'en' },
   twitter: { card: 'summary_large_image' },
 }
 
@@ -47,8 +49,9 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
             <Footer />
           </TooltipProvider>
         </ThemeProvider>
-        {/* Cookieless page-view analytics. Inactive outside Vercel. */}
+        {/* Cookieless page-view analytics and Core Web Vitals. Inactive outside Vercel. */}
         <Analytics />
+        <SpeedInsights />
         <AdsenseScript />
       </body>
     </html>

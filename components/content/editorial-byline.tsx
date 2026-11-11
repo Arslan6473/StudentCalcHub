@@ -2,16 +2,7 @@ import Link from 'next/link'
 import { ShieldCheck } from 'lucide-react'
 
 import { EDITORIAL } from '@/config/site'
-
-function formatDate(iso: string): string {
-  // Parsed as UTC so the printed day never shifts with the build machine's timezone.
-  return new Date(`${iso}T00:00:00Z`).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-    timeZone: 'UTC',
-  })
-}
+import { formatDate } from '@/lib/format-date'
 
 /**
  * Shown under every tool and data page title so readers can see who is

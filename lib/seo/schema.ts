@@ -106,7 +106,74 @@ export function websiteSchema() {
     name: SITE.name,
     url: SITE.url,
     description: SITE.description,
-    inLanguage: 'en-US',
+    inLanguage: 'en',
     publisher: { '@id': ORGANIZATION_ID },
+  }
+}
+
+/** Blog posts. Image is the post's generated social card. */
+export function articleSchema({
+  title,
+  description,
+  url,
+  datePublished,
+  dateModified,
+  section,
+  keywords,
+}: {
+  title: string
+  description: string
+  url: string
+  datePublished: string
+  dateModified: string
+  section: string
+  keywords: string[]
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description,
+    url: `${SITE.url}${url}`,
+    mainEntityOfPage: `${SITE.url}${url}`,
+    image: `${SITE.url}${url}/opengraph-image`,
+    datePublished,
+    dateModified,
+    articleSection: section,
+    keywords: keywords.join(', '),
+    inLanguage: 'en',
+    author: AUTHOR,
+    publisher: { '@id': ORGANIZATION_ID },
+  }
+}
+
+/** Index pages (hubs, blog): the page plus the ordered list of what it links to. */
+export function collectionPageSchema({
+  name,
+  description,
+  url,
+  items,
+}: {
+  name: string
+  description: string
+  url: string
+  items: Array<{ label: string; href: string }>
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name,
+    description,
+    url: `${SITE.url}${url}`,
+    publisher: { '@id': ORGANIZATION_ID },
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListElement: items.map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: item.label,
+        url: `${SITE.url}${item.href}`,
+      })),
+    },
   }
 }

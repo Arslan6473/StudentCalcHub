@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 export default function Page() {
   const states = getStates()
   const breadcrumbItems = [
-    { label: 'GPA & Graduation', href: '/gpa' },
+    { label: 'GPA & Grades', href: '/gpa' },
     { label: 'High School Credits', href: PATH },
   ]
   const updated = states.reduce((max, s) => (s.lastChecked > max ? s.lastChecked : max), '')
