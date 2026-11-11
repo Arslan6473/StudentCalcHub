@@ -1,17 +1,17 @@
 import { notFound } from 'next/navigation'
-import { MDXRemote, type MDXRemoteProps } from 'next-mdx-remote/rsc'
-import remarkGfm from 'remark-gfm'
-import rehypeSlug from 'rehype-slug'
-import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 
 import { getHub } from '@/config/hubs'
 import { relatedLinks, toolPath } from '@/config/tools'
 import type { ToolConfig } from '@/config/tools/types'
+import { HUB_BLOG_CATEGORIES } from '@/config/blog'
+import { getPosts } from '@/lib/blog/posts'
 import { readToolContent } from '@/lib/content/read-content'
 import { breadcrumbSchema, faqSchema, webApplicationSchema } from '@/lib/seo/schema'
-import { mdxComponents } from '@/components/content/mdx-components'
 import { EditorialByline } from '@/components/content/editorial-byline'
+import { Mdx } from '@/components/content/mdx'
 import { AdSlot } from '@/components/ads/ad-slot'
+import { PostGrid } from '@/components/blog/post-card'
+import { HubIcon } from '@/components/navigation/hub-icon'
 import { Breadcrumbs } from '@/components/seo/breadcrumbs'
 import { JsonLd } from '@/components/seo/json-ld'
 import { TOOL_COMPONENTS_BY_SLUG } from '@/components/tools/instances'
@@ -31,6 +31,12 @@ export async function ToolPage({ tool }: { tool: ToolConfig }) {
   if (!hub || !Calculator) notFound()
   const [firstSection, rest] = splitAfterFirstSection(await readToolContent(tool.slug))
   const path = toolPath(tool)
+  // Guides that link to this tool first, then others from the hub's categories.
+  const categories: string[] = HUB_BLOG_CATEGORIES[tool.hub]
+  const guides = getPosts()
+    .filter((p) => p.relatedTools.includes(path) || categories.includes(p.category))
+    .sort((a, b) => Number(b.relatedTools.includes(path)) - Number(a.relatedTools.includes(path)))
+    .slice(0, 3)
 
   const breadcrumbItems = [
     { label: hub.name, href: hub.href },
@@ -48,7 +54,10 @@ export async function ToolPage({ tool }: { tool: ToolConfig }) {
       <Breadcrumbs items={breadcrumbItems} />
 
       <header className="mb-8 max-w-3xl">
-        <h1 className="text-3xl font-bold text-ink sm:text-4xl">{tool.name}</h1>
+        <div className="flex items-start gap-4">
+          <HubIcon slug={tool.hub} className="mt-1 hidden sm:flex" />
+          <h1 className="text-3xl font-bold tracking-tight text-ink sm:text-4xl">{tool.name}</h1>
+        </div>
         <p className="mt-2 text-lg text-ink-muted">{tool.summary}</p>
         <EditorialByline updated={tool.updated} />
       </header>
@@ -67,21 +76,11 @@ export async function ToolPage({ tool }: { tool: ToolConfig }) {
         <FaqSection faqs={tool.faqs} />
         <SourcesList sources={tool.sources} />
         <RelatedTools links={relatedLinks(tool)} />
+        <PostGrid posts={guides} title="Related guides" id="related-guides" />
         <AdSlot placement="end-of-page" />
       </div>
     </div>
   )
-}
-
-const MDX_OPTIONS = {
-  mdxOptions: {
-    remarkPlugins: [remarkGfm],
-    rehypePlugins: [rehypeSlug, [rehypeAutolinkHeadings, { behavior: 'wrap' }]],
-  },
-} satisfies MDXRemoteProps['options']
-
-function Mdx({ source }: { source: string }) {
-  return <MDXRemote source={source} components={mdxComponents} options={MDX_OPTIONS} />
 }
 
 /** Splits at the second `## ` heading so the in-content ad sits after the first section. */

@@ -14,9 +14,11 @@ export default function AboutPage() {
   return (
     <ProsePage title={`About ${SITE.name}`} href="/about">
       <p>
-        {SITE.name} is a free set of calculators and lookup pages for US high school and college
-        students. It covers GPA and graduation questions, chemistry lab math, statistics, and
-        test-score estimates. Every tool shows the steps behind its answer, so you can see how the
+        {SITE.name} is a free set of calculators, lookup pages and study guides for high school,
+        college and university students around the world. It covers GPA and grade conversion
+        between countries, chemistry lab math, statistics, and test-score estimates. A few data
+        pages — US college Latin honors and US state graduation credits — are country-specific
+        and say so. Every tool shows the steps behind its answer, so you can see how the
         result was reached and check it against your own work.
       </p>
 

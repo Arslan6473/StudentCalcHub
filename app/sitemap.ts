@@ -3,6 +3,8 @@ import type { MetadataRoute } from 'next'
 import { HUBS } from '@/config/hubs'
 import { SITE } from '@/config/site'
 import { TOOLS, toolPath, toolsInHub } from '@/config/tools'
+import { BLOG, BLOG_CATEGORIES } from '@/config/blog'
+import { getPosts } from '@/lib/blog/posts'
 import { getColleges } from '@/lib/data/colleges'
 import { getStates } from '@/lib/data/states'
 
@@ -19,6 +21,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const states = getStates()
   const collegesChecked = latest(colleges.map((c) => c.lastChecked))
   const statesChecked = latest(states.map((s) => s.lastChecked))
+  const posts = getPosts()
+  // Empty categories are noindex, so they stay out of the sitemap too.
+  const categories = BLOG_CATEGORIES.filter((c) => posts.some((p) => p.category === c.slug))
   // A hub index lists its tools (and, for GPA, the college and state pages), so it changes when they do.
   const hubDates: Record<string, string> = Object.fromEntries(
     HUBS.map((hub) => {
@@ -42,6 +47,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...colleges.map((c) => entry(`/gpa/college/${c.slug}`, c.lastChecked, 0.7)),
     entry('/high-school-credits', statesChecked, 0.8),
     ...states.map((s) => entry(`/high-school-credits/${s.slug}`, s.lastChecked, 0.7)),
+    ...(posts.length > 0 ? [entry(BLOG.href, latest(posts.map((p) => p.updated)), 0.8)] : []),
+    ...categories.map((c) =>
+      entry(`${BLOG.href}/category/${c.slug}`, latest(posts.filter((p) => p.category === c.slug).map((p) => p.updated)), 0.6),
+    ),
+    ...posts.map((p) => entry(p.href, p.updated, 0.7)),
     ...['/about', '/editorial-policy', '/disclaimer', '/privacy', '/terms', '/contact'].map((p) =>
       entry(p, undefined, 0.3),
     ),

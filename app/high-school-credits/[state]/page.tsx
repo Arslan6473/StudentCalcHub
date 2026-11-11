@@ -45,7 +45,7 @@ export default async function Page({ params }: PageProps<'/high-school-credits/[
   const heading = title(state.name, state.appliesToClassOf)
   const faqs = stateFaqs(state)
   const breadcrumbItems = [
-    { label: 'GPA & Graduation', href: '/gpa' },
+    { label: 'GPA & Grades', href: '/gpa' },
     { label: 'High School Credits', href: '/high-school-credits' },
     { label: state.name, href: path },
   ]

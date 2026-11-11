@@ -1,0 +1,175 @@
+---
+title: 'How to Choose a Statistical Test: A Step-by-Step Guide'
+description: 'How to choose a statistical test by outcome type, number of groups, paired vs independent data and normality, with a test table and nonparametric options'
+date: '2026-11-11'
+updated: '2026-11-11'
+category: 'statistics'
+tags: ['statistical tests', 't-test', 'anova', 'chi-square', 'nonparametric']
+relatedTools: ['/statistics/which-statistical-test', '/statistics/sample-size-calculator']
+---
+
+To choose a statistical test, answer four questions in order: what kind of outcome you measured, how many groups you're comparing, whether those groups are paired or independent, and whether your data meet the assumptions of a parametric test. Those answers point to one standard test and, usually, a nonparametric backup. The table near the end of this guide puts the common choices on one page.
+
+## Step 1: What is your research question?
+
+Most student projects ask one of four kinds of question:
+
+- **Compare groups.** Do students who use flashcards score higher than those who reread notes?
+- **Measure a relationship.** Is hours of sleep related to quiz score?
+- **Predict an outcome.** Can hours studied and attendance predict the final grade?
+- **Compare counts with expected proportions.** Are the four answer options on a quiz chosen equally often?
+
+Write your question down in one sentence before you look at any test. If you can't, the test choice won't fix it.
+
+## Step 2: What type of outcome variable do you have?
+
+The outcome (dependent variable) is the thing you measured. Its type narrows the choice more than anything else.
+
+| Outcome type | What it looks like | Examples |
+|---|---|---|
+| Continuous | Numbers on a scale where differences are meaningful | Test score, reaction time, mass, height |
+| Ordinal | Ordered categories, but the gaps aren't equal | 1–5 agreement rating, pain scale, class rank |
+| Categorical (nominal) | Groups with no order | Yes/no, blood type, preferred study method |
+
+A common trap is a 1–5 rating. It looks like a number, but the gap between "agree" and "strongly agree" isn't necessarily the same as between "neutral" and "agree". Treat a single rating item as ordinal unless your teacher says otherwise.
+
+## Step 3: How many groups, and are they paired?
+
+### Number of groups
+
+- **One group** compared with a known value (for example, does this class's mean differ from the national mean?).
+- **Two groups.**
+- **Three or more groups.**
+
+### Independent vs paired
+
+This is the question students get wrong most often.
+
+- **Independent groups** contain different people (or samples). Flashcard users vs rereaders. Class A vs class B.
+- **Paired (dependent) groups** are linked. The same students tested before and after a revision course. Left hand vs right hand of the same person. Twins split between two conditions.
+
+Paired designs need paired tests. A paired test works with the difference within each pair, which removes the person-to-person variation and makes it easier to detect a real effect. Using an independent test on paired data throws that advantage away and breaks the test's assumptions.
+
+## Step 4: Parametric or nonparametric?
+
+**Parametric tests** (t-tests, ANOVA, Pearson correlation) assume your data, or more precisely the errors, are roughly normally distributed. They work with means.
+
+**Nonparametric tests** (Mann–Whitney, Wilcoxon, Kruskal–Wallis, Spearman) work with ranks instead of raw values, so they make fewer assumptions about the shape of the data. They suit ordinal outcomes, strongly skewed data, small samples, and data with extreme outliers.
+
+How to decide:
+
+1. **Is the outcome ordinal?** Use a nonparametric test.
+2. **Is the outcome continuous?** Plot it. A histogram or box plot for each group shows skew and outliers quickly.
+3. **Roughly symmetric with no extreme outliers?** The parametric test is usually fine, especially with larger samples.
+4. **Badly skewed, or a very small sample?** Use the nonparametric test, or ask your teacher whether a transformation is expected.
+
+Don't run both and report whichever gives the smaller p-value. Choose the test from your design and data, then run it.
+
+## The decision table
+
+| Goal | Outcome | Design | Parametric test | Nonparametric option |
+|---|---|---|---|---|
+| Compare one group with a known value | Continuous | One sample | One-sample t-test | One-sample Wilcoxon signed-rank |
+| Compare 2 groups | Continuous | Independent | Independent t-test (Welch's) | Mann–Whitney U (Wilcoxon rank-sum) |
+| Compare 2 groups | Continuous | Paired | Paired t-test | Wilcoxon signed-rank |
+| Compare 3+ groups | Continuous | Independent | One-way ANOVA | Kruskal–Wallis |
+| Compare 3+ groups | Continuous | Repeated measures | Repeated-measures ANOVA | Friedman test |
+| Compare 2+ groups | Ordinal | Independent | — | Mann–Whitney U (2 groups), Kruskal–Wallis (3+) |
+| Compare groups | Categorical | Independent | Chi-square test of independence | Fisher's exact test (small expected counts) |
+| Compare 2 conditions | Categorical (yes/no) | Paired | — | McNemar's test |
+| Compare counts with expected proportions | Categorical | One variable | Chi-square goodness-of-fit | Exact binomial test (2 categories) |
+| Relationship | Two continuous variables | One sample | Pearson correlation | Spearman rank correlation |
+| Predict an outcome | Continuous | One or more predictors | Linear regression | — |
+| Predict an outcome | Yes/no | One or more predictors | Logistic regression | — |
+
+The interactive [which statistical test chooser](/statistics/which-statistical-test) walks through these questions and shows the assumptions for each result.
+
+## A few rules worth knowing
+
+### Use ANOVA, not many t-tests
+
+With three groups, you could run three t-tests (A vs B, A vs C, B vs C). Each test has its own chance of a false positive, and running several makes the overall chance of at least one false positive higher than your chosen significance level. A one-way ANOVA tests all groups at once. If it's significant, follow up with a post-hoc test such as Tukey's to see which groups differ.
+
+### Welch's t-test is a safe default
+
+The classic independent t-test assumes both groups have equal variances. Welch's version doesn't, and it gives almost the same answer when the variances really are equal. R's `t.test` function, for example, uses Welch's version unless you ask otherwise.
+
+### Chi-square needs enough expected counts
+
+The chi-square test is an approximation. A common rule of thumb is that it's adequate when every **expected** count in the table is at least 5. When expected counts are smaller, use Fisher's exact test. The rule is about expected counts (calculated from the row and column totals), not the counts you observed.
+
+### Correlation is not causation
+
+A strong correlation shows that two variables move together. It doesn't show that one causes the other. Only a designed experiment, with random assignment, can support a causal claim.
+
+## Worked examples
+
+### Example 1: flashcards vs rereading
+
+35 students use flashcards and a different 35 reread notes. The outcome is a quiz score out of 50, and the histograms look roughly symmetric.
+
+- Outcome: continuous
+- Groups: two
+- Design: independent (different students)
+- Assumptions: roughly normal
+
+**Test: independent t-test (Welch's).** If one group's scores were badly skewed, use Mann–Whitney U.
+
+### Example 2: before and after a revision course
+
+20 students take a practice test, attend a revision course, then take a similar test.
+
+- Outcome: continuous
+- Groups: two time points
+- Design: paired (same students)
+
+**Test: paired t-test.** With only 20 students, plot the 20 differences. If they're strongly skewed or have an extreme outlier, use the Wilcoxon signed-rank test.
+
+### Example 3: study method and passing
+
+You record whether 120 students passed (yes/no) and which of three study methods they used.
+
+- Outcome: categorical
+- Groups: three, independent
+- Design: a 3 × 2 table of counts
+
+**Test: chi-square test of independence.** Check the expected counts first. If several are below 5, ask your teacher whether to combine categories or use an exact test.
+
+### Example 4: satisfaction ratings across three year groups
+
+Students in years 1, 2 and 3 rate a library service from 1 to 5.
+
+- Outcome: ordinal
+- Groups: three, independent
+
+**Test: Kruskal–Wallis.**
+
+### Example 5: sleep and quiz scores
+
+You record hours of sleep and quiz score for 40 students.
+
+- Goal: relationship
+- Both variables continuous
+
+**Test: Pearson correlation** if the scatter plot looks roughly linear with no extreme outliers; **Spearman** if the relationship is curved but consistently up or down, or if there are outliers.
+
+## Before you collect data
+
+Choose your test before you collect data, not after. The test affects how many participants you need. Once you know which test you'll use, the [sample size calculator](/statistics/sample-size-calculator) helps you plan how many people to include.
+
+## Common mistakes
+
+- **Using an independent test on paired data.**
+- **Running several t-tests instead of ANOVA.**
+- **Using chi-square with small expected counts.**
+- **Treating a single 1–5 rating as continuous** without checking with your teacher.
+- **Picking the test after seeing the p-values.**
+- **Reporting correlation as cause and effect.**
+
+## Sources
+
+- UCLA Office of Advanced Research Computing, [Choosing the correct statistical test in SAS, Stata, SPSS and R](https://stats.oarc.ucla.edu/other/mult-pkg/whatstat/)
+- NIST/SEMATECH e-Handbook of Statistical Methods, [Two-sample t-test for equal means](https://www.itl.nist.gov/div898/handbook/eda/section3/eda353.htm)
+- NIST/SEMATECH e-Handbook of Statistical Methods, [The Kruskal–Wallis test](https://www.itl.nist.gov/div898/handbook/prc/section4/prc41.htm)
+- MedCalc Statistical Software manual, [Fisher's exact test](https://www.medcalc.org/en/book/fishers-exact-test.php)
+- McDonald, *Handbook of Biological Statistics* (LibreTexts), [Small numbers in chi-square and G-tests](https://stats.libretexts.org/Bookshelves/Applied_Statistics/Biological_Statistics_(McDonald)/02:_Tests_for_Nominal_Variables/2.08:_Small_Numbers_in_Chi-Square_and_GTests)

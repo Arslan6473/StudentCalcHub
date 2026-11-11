@@ -2,6 +2,9 @@ import type { ComponentType } from 'react'
 
 import type { ToolComponentSlug } from '@/components/tools/instance-slugs'
 import { GradeConverterTool } from '@/components/tools/grade-converter/grade-converter-tool'
+import { GpaScaleConverterTool } from '@/components/tools/gpa-scale-converter/gpa-scale-converter-tool'
+import { CgpaToPercentageCalculatorTool } from '@/components/tools/cgpa-to-percentage-calculator/cgpa-to-percentage-calculator-tool'
+import { UkDegreeClassificationCalculatorTool } from '@/components/tools/uk-degree-classification-calculator/uk-degree-classification-calculator-tool'
 import { GramsToMolesCalculatorTool } from '@/components/tools/grams-to-moles-calculator/grams-to-moles-calculator-tool'
 import { MolarityCalculatorTool } from '@/components/tools/molarity-calculator/molarity-calculator-tool'
 import { PercentErrorCalculatorTool } from '@/components/tools/percent-error-calculator/percent-error-calculator-tool'
@@ -14,6 +17,9 @@ import { ActScoreCalculatorTool } from '@/components/tools/act-score-calculator/
 
 export const TOOL_COMPONENTS: Record<ToolComponentSlug, ComponentType> = {
   'grade-converter': GradeConverterTool,
+  'gpa-scale-converter': GpaScaleConverterTool,
+  'cgpa-to-percentage-calculator': CgpaToPercentageCalculatorTool,
+  'uk-degree-classification-calculator': UkDegreeClassificationCalculatorTool,
   'percent-error-calculator': PercentErrorCalculatorTool,
   'sig-fig-calculator': SigFigCalculatorTool,
   'grams-to-moles-calculator': GramsToMolesCalculatorTool,

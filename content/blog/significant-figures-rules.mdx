@@ -1,0 +1,155 @@
+---
+title: 'Significant Figures Rules: Counting, Rounding and Calculations'
+description: 'Significant figures rules made simple: count sig figs, round, add and subtract vs multiply and divide, and handle exact numbers, with worked examples.'
+date: '2026-11-11'
+updated: '2026-11-11'
+category: 'chemistry'
+tags: ['significant figures', 'sig figs', 'rounding', 'lab reports']
+relatedTools: ['/chemistry/sig-fig-calculator', '/chemistry/percent-error-calculator', '/chemistry/molarity-calculator']
+---
+
+Significant figures are the digits in a measurement that carry real information: every certain digit plus the first uncertain one. Count all nonzero digits, zeros between them, and trailing zeros after a decimal point; never count leading zeros. When you calculate, adding and subtracting keeps the fewest decimal places, while multiplying and dividing keeps the fewest significant figures.
+
+## Why significant figures matter
+
+A balance that reads 2.00 g tells you the mass to the nearest hundredth of a gram. Writing "2 g" throws away that precision. Writing "2.0000 g" claims precision you never had.
+
+Calculators don't know any of this. Divide 10.4 by 3.0 and your calculator shows 3.466666667. Sig fig rules tell you how many of those digits are meaningful.
+
+## Rules for counting significant figures
+
+1. **Nonzero digits are always significant.** 4.56 has 3.
+2. **Zeros between nonzero digits are significant.** 305 has 3. 1.0072 has 5.
+3. **Leading zeros are never significant.** They only place the decimal point. 0.0045 has 2.
+4. **Trailing zeros after a decimal point are significant.** 100.0 has 4. 2.50 has 3.
+5. **Trailing zeros in a whole number with no decimal point are ambiguous.** 1500 could have 2, 3 or 4. Most courses count it as 2. Write 1.500 × 10³ (or 1500. with a decimal point) to show all four were measured.
+6. **In scientific notation, count only the number before × 10.** 6.02 × 10²³ has 3.
+
+### Practice table
+
+| Number | Sig figs | Why |
+|---|---|---|
+| 4.56 | 3 | All nonzero |
+| 305 | 3 | Zero between nonzero digits counts |
+| 0.0045 | 2 | Leading zeros don't count |
+| 0.00450 | 3 | Trailing zero after the decimal counts |
+| 100.0 | 4 | Trailing zeros after a decimal count |
+| 1500 | 2 (ambiguous) | Trailing zeros, no decimal point |
+| 1.500 × 10³ | 4 | Only the 1.500 counts |
+| 2.00 | 3 | Shows the balance read to 0.01 g |
+| 120. | 3 | The decimal point makes the zero significant |
+
+Check your own numbers with the [sig fig calculator](/chemistry/sig-fig-calculator).
+
+## How to round to a set number of significant figures
+
+1. Count from the first nonzero digit to the number of sig figs you need.
+2. Look at the next digit (the first one you'll drop).
+3. If it's 5 or more, round up. If it's less than 5, leave the last kept digit as it is.
+4. Replace dropped digits to the left of the decimal point with zeros, so the size of the number doesn't change.
+
+| Round | To | Result |
+|---|---|---|
+| 2.3456 | 3 sig figs | 2.35 (dropped digit is 5, so round up) |
+| 0.004682 | 3 sig figs | 0.00468 (dropped digit is 2) |
+| 7.8951 | 2 sig figs | 7.9 |
+| 1,549 | 2 sig figs | 1,500, better written as 1.5 × 10³ |
+
+Some courses use a different tie-breaking rule for an exact 5, such as rounding to the nearest even digit. If your course does, follow it.
+
+## Adding and subtracting: fewest decimal places
+
+When you add or subtract, the answer can't be more precise than the least precise number, measured by **decimal places**, not sig figs.
+
+### Example: adding masses
+
+12.11 g + 0.3 g = 12.41 g on the calculator.
+
+- 12.11 is known to the hundredths place.
+- 0.3 is only known to the tenths place.
+
+Round to the tenths: **12.4 g**.
+
+### Example: subtraction can lose sig figs
+
+25.624 mL − 25.1 mL = 0.524 mL on the calculator.
+
+25.1 is known only to the tenths place, so round to the tenths: **0.5 mL**. Both inputs had at least 3 sig figs, but the answer has just 1. This is why small differences between large measurements are hard to measure precisely.
+
+## Multiplying and dividing: fewest significant figures
+
+When you multiply or divide, the answer keeps as many **sig figs** as the input with the fewest.
+
+### Example: area
+
+2.5 cm × 3.47 cm = 8.675 cm² on the calculator.
+
+2.5 has 2 sig figs and 3.47 has 3. Keep 2: **8.7 cm²**.
+
+### Example: division
+
+9.84 g ÷ 2.1 mL = 4.6857… g/mL.
+
+2.1 has 2 sig figs, so the answer is **4.7 g/mL**.
+
+## Exact numbers don't limit sig figs
+
+Some numbers aren't measurements. They have no uncertainty, so they're treated as having infinitely many significant figures and never limit your answer.
+
+- **Counted values:** 3 coins, 25 students, 2 trials.
+- **Defined conversions:** 100 cm = 1 m, 1 in = 2.54 cm, 1000 mL = 1 L.
+- **Numbers in formulas:** the 2 in 2πr, the 100 in percent error, the 2 in 2(1.008 g) for the mass of two hydrogen atoms.
+
+### Example
+
+Each of 3 identical coins has a mass of 2.50 g. The total is 3 × 2.50 g = 7.50 g. The 3 is counted, so it doesn't limit the answer. 2.50 has 3 sig figs, so the answer keeps 3: **7.50 g**, not 8 g.
+
+## Multi-step calculations
+
+When a problem mixes operations, apply the rules step by step, but **don't round until the end**. Keep at least one extra digit in intermediate results, and track how many sig figs each step allows.
+
+### Example: density by water displacement
+
+A metal sample has a mass of **12.457 g**. The water level in a cylinder rises from **25.2 mL** to **35.6 mL**.
+
+1. **Volume (subtraction):** 35.6 − 25.2 = 10.4 mL. Both are to the tenths, so 10.4 mL is good to the tenths. That's 3 sig figs.
+2. **Density (division):** 12.457 ÷ 10.4 = 1.19779… g/mL.
+3. 12.457 has 5 sig figs and 10.4 has 3. Keep 3: **1.20 g/mL**.
+
+Keep the trailing zero. 1.20 shows 3 sig figs; 1.2 would show only 2.
+
+### Example: subtraction then multiplication
+
+(4.52 − 4.3) × 2.105
+
+1. 4.52 − 4.3 = 0.22. 4.3 is only good to the tenths, so this difference has just 1 sig fig. Note that, but keep 0.22 for the next step.
+2. 0.22 × 2.105 = 0.4631.
+3. The difference has 1 sig fig, so the answer gets 1: **0.5**.
+
+If you had rounded 0.22 to 0.2 first, you would get 0.2 × 2.105 = 0.421, which rounds to 0.4. Early rounding changed the answer.
+
+## Quick reference
+
+| Situation | Rule |
+|---|---|
+| Counting | Nonzero, sandwiched zeros and trailing zeros after a decimal count. Leading zeros never do. |
+| Adding / subtracting | Keep the fewest decimal places |
+| Multiplying / dividing | Keep the fewest significant figures |
+| Exact numbers | Never limit the answer |
+| Multi-step problems | Carry extra digits, round once at the end |
+
+## Common mistakes
+
+- **Counting leading zeros.** 0.0045 has 2 sig figs, not 5.
+- **Dropping meaningful trailing zeros.** If the balance says 2.00 g, write 2.00 g.
+- **Using the wrong rule.** Decimal places for + and −, sig figs for × and ÷.
+- **Rounding at every step.** Round once, at the end.
+- **Letting exact numbers limit the answer.** "3 trials" doesn't make your answer 1 sig fig.
+- **Trusting the calculator display.** 3.466666667 is not a result you can report from 10.4 ÷ 3.0. The answer is 3.5.
+
+Sig fig rules apply to every lab calculation, including [percent error](/chemistry/percent-error-calculator) and [molarity](/chemistry/molarity-calculator).
+
+## Sources
+
+- LibreTexts Chemistry (Tro, Introductory Chemistry), [2.04: Significant Figures in Calculations](https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Map:_Introductory_Chemistry_(Tro)/02:_Measurement_and_Problem_Solving/2.04:_Significant_Figures_in_Calculations)
+- LibreTexts Chemistry (Portland Community College, Allied Health Chemistry I), [2.4: Calculations and Significant Figures](https://chem.libretexts.org/Courses/Portland_Community_College/CH104%3A_Allied_Health_Chemisty_I_(2nd_Edition)/02%3A_Measurement_and_Significant_Figures/2.04%3A_Calculations_and_Significant_Figures)

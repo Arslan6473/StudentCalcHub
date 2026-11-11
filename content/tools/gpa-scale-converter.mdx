@@ -1,0 +1,72 @@
+## How it works
+
+Countries grade on different scales: a 4.0 GPA in the US, a 7-point GPA in Australia, a 10-point CGPA in
+India and Pakistan, marks out of 20 in France, percentages almost everywhere. When you apply abroad, you
+often have to state your grade on someone else's scale. This converter offers two methods.
+
+**Linear (proportional) conversion** — between any two of the 4.0, 5.0, 7-point, 10-point, 0–20,
+percentage or custom scales. Your grade keeps the same share of its scale:
+
+**new grade = your grade ÷ old maximum × new maximum**
+
+With a custom scale that does not start at 0, the lowest grade is subtracted first, so the bottom of one
+scale lines up with the bottom of the other.
+
+**Modified Bavarian formula** — to a German grade, where **1.0 is the best grade and 4.0 is the lowest
+pass**. The KMK (the conference of Germany's education ministers) sets this formula in its agreement on
+foreign certificates:
+
+**German grade = 1 + 3 × (Nmax − Nd) ÷ (Nmax − Nmin)**
+
+- **Nmax** is the best grade on your scale.
+- **Nmin** is the lowest passing grade on your scale.
+- **Nd** is your grade.
+
+The KMK rule is to keep **one decimal place without rounding**, so 1.75 becomes 1.7. A grade below your
+pass mark comes out worse than 4.0, which is a fail in Germany.
+
+### Every result is an estimate
+
+A formula cannot know how strict your university is. Universities and credential evaluators such as WES
+often convert grade by grade with country-specific tables, and German universities send many applicants
+through uni-assist, which applies the official values. Use this tool to compare and plan, then check the
+method each university or evaluator names on its admissions page.
+
+## Worked example
+
+You have an **8.5 CGPA on a 10-point scale** and are applying to a US master's program.
+
+1. Share of the scale: 8.5 ÷ 10 = 0.85
+2. Scale up: 0.85 × 4 = **3.40 on the 4.0 scale**
+
+Now you are also applying in Germany with a French degree average of **14/20**. In France you need an
+average of 10/20 to validate credits, so Nmin = 10.
+
+1. German grade = 1 + 3 × (20 − 14) ÷ (20 − 10)
+2. = 1 + 3 × 0.6 = **2.8**
+
+The rounding rule matters at the edges. With 85% on a scale where 40% is the pass mark, the formula gives
+1 + 3 × 15 ÷ 60 = 1.75, which is cut to **1.7**, not rounded to 1.8.
+
+Converting individual US letter grades instead? Use the [letter grade converter](/gpa/grade-converter).
+
+## When to use this
+
+- To fill in a "GPA on a 4.0 scale" field when your university grades out of 10, 20 or 100, and the form
+  allows a self-reported estimate.
+- To check whether you meet a German program's grade requirement before applying.
+- To compare offers or scholarship cutoffs that are written on a scale you are not used to.
+- To see what a grade from an exchange semester means on your home scale.
+
+## Common mistakes
+
+- **Treating the estimate as official.** If an application asks for a WES evaluation, a uni-assist
+  report or your university's own conversion, that number is the one that counts, and it can differ from
+  a linear result.
+- **Using the wrong pass mark.** The German result depends heavily on Nmin. 14/20 is 2.8 with a pass mark
+  of 10, but 2.5 with a pass mark of 8. Take Nmin from your transcript or university rules.
+- **Converting a percentage that came from a CGPA formula.** If your percentage was itself calculated from
+  a CGPA, converting it again stacks two approximations. Start from the grade printed on your transcript.
+- **Rounding the German grade up.** The KMK rule cuts to one decimal. A 2.29 is a 2.2, not a 2.3.
+- **Mixing scales where lower is better.** German grades run the other way: 1.0 is the best. Don't enter
+  a German grade as if 4.0 were the top.

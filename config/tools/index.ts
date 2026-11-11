@@ -1,6 +1,9 @@
 import type { HubSlug } from '@/config/hubs'
 import type { ToolConfig } from '@/config/tools/types'
 import { gradeConverter } from '@/config/tools/grade-converter'
+import { gpaScaleConverter } from '@/config/tools/gpa-scale-converter'
+import { cgpaToPercentageCalculator } from '@/config/tools/cgpa-to-percentage-calculator'
+import { ukDegreeClassificationCalculator } from '@/config/tools/uk-degree-classification-calculator'
 import { gramsToMolesCalculator } from '@/config/tools/grams-to-moles-calculator'
 import { molarityCalculator } from '@/config/tools/molarity-calculator'
 import { percentErrorCalculator } from '@/config/tools/percent-error-calculator'
@@ -14,6 +17,9 @@ import { actScoreCalculator } from '@/config/tools/act-score-calculator'
 /** Single source of truth for tool routes, hub listings, sitemap and related links. */
 export const TOOLS: ToolConfig[] = [
   gradeConverter,
+  gpaScaleConverter,
+  cgpaToPercentageCalculator,
+  ukDegreeClassificationCalculator,
   percentErrorCalculator,
   sigFigCalculator,
   gramsToMolesCalculator,
@@ -51,6 +57,6 @@ export function relatedLinks(tool: ToolConfig): { label: string; href: string; s
 }
 
 const RELATED_PATH_LABELS: Record<string, string> = {
-  '/gpa/latin-honors': 'Latin Honors GPA Requirements by College',
-  '/high-school-credits': 'High School Credits to Graduate by State',
+  '/gpa/latin-honors': 'Latin Honors GPA Requirements by US College',
+  '/high-school-credits': 'US High School Credits to Graduate by State',
 }
